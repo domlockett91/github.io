@@ -1,0 +1,27 @@
+---
+title: "Accommodations"
+---
+
+Welcome to St. Louis!
+
+
+
+Here you will find links to 
+
+----
+
+## Hotels
+
+- [**The Cheshire**](https://www.reservations.com/hotel/the-cheshire?rmcid=rcc4&msclkid=fe906f03fda01f6542a635b6d0b6af70#availablel)
+- other 
+- and more
+
+<br>
+ 
+## Entertainment
+ 
+
+- [**RStudio's Markdown basics**](http://rmarkdown.rstudio.com/authoring_basics.html)
+
+
+

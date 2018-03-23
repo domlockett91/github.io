@@ -1,0 +1,26 @@
+---
+title: "About Event"
+---
+
+The goal of is this event is to overcome some common issues political scientists have when measuring the impact of mayoral candidates on blah blah blah. We are working with 'insert impressive list of collaborators here' to achieve these goals. 
+
+
+
+
+----
+
+## Objectives
+
+<br>
+
+<!---this is an html comment that works in Markdown --->
+
+<!--- I use the <br> html tag to force carriage returns in the text--->
+
+
+- THis
+- and that
+- and this
+- stuff n stuff
+- cool
+ 
