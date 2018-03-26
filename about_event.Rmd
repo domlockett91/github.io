@@ -2,8 +2,7 @@
 title: "About Event"
 ---
 
-The goal of is this event is to overcome some common issues political scientists have when measuring the impact of mayoral candidates on blah blah blah. We are working with 'insert impressive list of collaborators here' to achieve these goals. 
-
+The goal of is this event is to overcome some common issues political scientists have when measuring the impact of mayoral candidates on blah blah blah.
 
 
 
@@ -11,16 +10,26 @@ The goal of is this event is to overcome some common issues political scientists
 
 ## Objectives
 
-<br>
 
-<!---this is an html comment that works in Markdown --->
-
-<!--- I use the <br> html tag to force carriage returns in the text--->
-
-
-- THis
+- [test](http://www.google.com)
 - and that
 - and this
 - stuff n stuff
 - cool
- 
+
+## Collaborators 
+
+- [Amber Bordstun](http://www.amber-boydstun.com/)
+- [Marianne Corvellec](https://marianne-corvellec.appspot.com/)
+- [Melody Crowder-Meyer ](http://www.melodycrowdermeyer.org/)
+- [Matt Dickenson](http://mattdickenson.com/)
+- [Liz Gerber ](http://www-personal.umich.edu/~ergerber/Welcome.html)
+- [Justin Grimmer ](https://www.justingrimmer.org/)
+- [Chris Lucas](http://christopherlucas.org/)
+- [Stella Rouse](http://gvptsites.umd.edu/srouse/)
+- [Alexandra Siegel](https://wp.nyu.edu/smapp/about-2/)
+- []()
+
+## Agenda
+<br>
+The event will begin with a breakfast  in the Seigle Hall Conference Room (#248) at 8:30 on ***** **. The morning will be spent tackling assigned topics followed by lunch at noon . The collaborative troubleshooting will continue until 4:30 at which time we will share the solutions we have developed.

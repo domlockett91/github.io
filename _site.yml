@@ -4,15 +4,15 @@ navbar:
   left:
     - text: "About Event"
       href: about_event.html
-    - text: "Accomodations"
-      href: accommodations.html
+    - text: "Travel Guide"
+      href: travel_guide.html
     - text: "Contact Us"
       href: contact_us.html
    
 output_dir: "."
 output:
   html_document:
-    theme: yeti
+    theme: journal
     highlight: textmate
 #    include:
 #      after_body: _footer.html
