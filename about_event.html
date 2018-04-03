@@ -15,10 +15,13 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -99,34 +102,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 61px;
+  padding-top: 64px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 66px;
-  margin-top: -66px;
+  padding-top: 69px;
+  margin-top: -69px;
 }
 
 .section h2 {
-  padding-top: 66px;
-  margin-top: -66px;
+  padding-top: 69px;
+  margin-top: -69px;
 }
 .section h3 {
-  padding-top: 66px;
-  margin-top: -66px;
+  padding-top: 69px;
+  margin-top: -69px;
 }
 .section h4 {
-  padding-top: 66px;
-  margin-top: -66px;
+  padding-top: 69px;
+  margin-top: -69px;
 }
 .section h5 {
-  padding-top: 66px;
-  margin-top: -66px;
+  padding-top: 69px;
+  margin-top: -69px;
 }
 .section h6 {
-  padding-top: 66px;
-  margin-top: -66px;
+  padding-top: 69px;
+  margin-top: -69px;
 }
 </style>
 
@@ -161,6 +164,101 @@ $(document).ready(function () {
 <!-- code folding -->
 
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -203,40 +301,85 @@ $(document).ready(function () {
 </div>
 
 
-<p>The goal of is this event is to overcome some common issues political scientists have when measuring the impact of mayoral candidates on blah blah blah.</p>
 <hr />
 <div id="objectives" class="section level2">
 <h2>Objectives</h2>
-<ul>
-<li><a href="http://www.google.com">test</a></li>
-<li>and that</li>
-<li>and this</li>
-<li>stuff n stuff</li>
-<li>cool</li>
-</ul>
+<p>The goal of this conference is to enable and nurture conversations which might not otherwise occur about how to make data actionable. The topic of the meeting is local government responsiveness.</p>
+<div id="the-mayoral-classification-challenge" class="section level3">
+<h3>The Mayoral Classification Challenge</h3>
+<p>The aim of our conference will be to establish which elected mayor does the best job engaging with citizens: this outcome can be measured in a couple of different ways. We will collect the social media data (both comments and reactions on Twitter and FB) from all mayors in the United States who are included in the Council of Mayors (mayors who are in cities over 30,000 residents). Separately we will also collect data on mayoral traits: vote share in their elections, the length of their service in office, the type of primary election, their gender, their previous elected experience, their partisanship, their race, their ethnicity, whether they were elected in a partisan election, etc.). We will encourage you and your team to exploit the data we have provided, to think deeply about methods and measurement, and to consider seriously what criteria we should use in evaluating mayoral responsiveness.</p>
+<hr />
+</div>
 </div>
 <div id="collaborators" class="section level2">
 <h2>Collaborators</h2>
+<div id="visiting" class="section level3">
+<h3>Visiting</h3>
 <ul>
-<li><a href="http://www.amber-boydstun.com/">Amber Bordstun</a></li>
-<li><a href="https://marianne-corvellec.appspot.com/">Marianne Corvellec</a></li>
-<li><a href="http://www.melodycrowdermeyer.org/">Melody Crowder-Meyer</a></li>
-<li><a href="http://mattdickenson.com/">Matt Dickenson</a></li>
-<li><a href="http://www-personal.umich.edu/~ergerber/Welcome.html">Liz Gerber</a></li>
-<li><a href="https://www.justingrimmer.org/">Justin Grimmer</a></li>
-<li><a href="http://christopherlucas.org/">Chris Lucas</a></li>
-<li><a href="http://gvptsites.umd.edu/srouse/">Stella Rouse</a></li>
-<li><a href="https://wp.nyu.edu/smapp/about-2/">Alexandra Siegel</a></li>
-<li><a href=""></a></li>
+<li><a href="http://www.amber-boydstun.com/">Amber Boydstun</a>, Associate Professor of Political Science, University of California, Davis</li>
+<li><a href="https://marianne-corvellec.appspot.com/">Marianne Corvellec</a>, Data Scientist</li>
+<li><a href="http://www.melodycrowdermeyer.org/">Melody Crowder-Meyer</a>, Assitant Professor of Political Science, Davidson College</li>
+<li><a href="http://mattdickenson.com/">Matt Dickenson</a>, Software Engineer</li>
+<li><a href="http://www-personal.umich.edu/~ergerber/Welcome.html">Liz Gerber</a>, Professor of Public Policy, University of Michigan</li>
+<li><a href="https://www.justingrimmer.org/">Justin Grimmer</a>, Associate Professor of Political Science, University of Chhicago’</li>
+<li><a href="http://christopherlucas.org/">Chris Lucas</a>, Assistant Professor of Political Science, Washington University in St. Louis</li>
+<li><a href="http://gvptsites.umd.edu/srouse/">Stella Rouse</a>, Associate Professor of Government and Politics</li>
+<li><a href="https://wp.nyu.edu/smapp/about-2/">Alexandra Siegel</a>, PhD candidate, New York University</li>
 </ul>
+</div>
+<div id="washu" class="section level3">
+<h3>WashU</h3>
+<div id="professors" class="section level4">
+<h4>Professors</h4>
+<ul>
+<li><a href="https://pages.wustl.edu/betsysinclair">Betsy Sinclair</a></li>
+<li><a href="http://pages.wustl.edu/montgomery">Jacob Montgomery</a>, Associate Professor of Political Science</li>
+<li><a href="http://pages.wustl.edu/tavits">Margit Tavits</a>, Professor of Political Science</li>
+<li><a href="https://soc.washington.edu/people/hedwig-hedy-lee">Hedy Lee</a>, Associate Professor of Sociology</li>
+<li><a href="https://polisci.wustl.edu/faculty/justin-fox">Justin Fox</a></li>
+<li>[Sanmay Das ] (<a href="http://www.cse.wustl.edu/~sanmay/" class="uri">http://www.cse.wustl.edu/~sanmay/</a>), Associate Professor of Computer Science and Engineering (WUSTL Computer Science)</li>
+</ul>
+</div>
+<div id="graduate-students" class="section level4">
+<h4>Graduate Students</h4>
+<ul>
+<li><a href="https://polisci.wustl.edu/faculty/erin-rossiter">Erin Rossiter</a>, Political Science</li>
+<li><a href="https://polisci.wustl.edu/faculty/ryden-butler">Ryden Butler</a>, Political Science</li>
+<li><a href="http://jbduckmayr.com/">JB Duck-Mayr</a>, Political Science</li>
+<li><a href="https://polisci.wustl.edu/faculty/bryant-moy">Bryant Moy</a>, Political Science</li>
+<li><a href="https://polisci.wustl.edu/faculty/patrick-rickert">Patrick Rickert</a>, Political Science</li>
+<li><a href="https://sites.wustl.edu/minheeseo/">Min Hee Seo</a>, Political Science</li>
+<li><a href="http://smtorres.org/">Michell Torres Pacheco</a>, Political Science</li>
+<li><a href="https://polisci.wustl.edu/faculty/patrick-cunha-silva">Patrick Silva</a>, Political Science</li>
+<li><a href="https://sites.wustl.edu/drmiller/">David Miller</a>, Political Science</li>
+<li><a href="https://polisci.wustl.edu/faculty/luwei-ying-0">Luwei Ying</a>, Political Science</li>
+<li><a href="http://www.cse.wustl.edu/~haoyan/">Hao Yan</a>, Computer Science</li>
+</ul>
+<hr />
+</div>
+</div>
 </div>
 <div id="agenda" class="section level2">
 <h2>Agenda</h2>
-<p><br> The event will begin with a breakfast in the Seigle Hall Conference Room (#248) at 8:30 on ***** **. The morning will be spent tackling assigned topics followed by lunch at noon . The collaborative troubleshooting will continue until 4:30 at which time we will share the solutions we have developed.</p>
+<p><br></p>
+<div id="may-2" class="section level3">
+<h3>May 2</h3>
+<p>After your arrival you are invited to attend a happy hour hosted on the roof of the Moonrise Hotel (weather permitting).</p>
+</div>
+<div id="may-3" class="section level3">
+<h3>May 3</h3>
+<p>The event will begin with a breakfast in the Seigle Hall Conference Room (#248) at 8:30. You are responsible for travel to and from your hotel (it is walkable). Participants will be divided into three groups and the morning will be spent tackling the various assignments. A lunch will be available at noon. The collaborative troubleshooting will continue until 4:30 at which time we will share the solutions we have developed. Following the conference we will host a dinner on the rooftop of Moonrise (weather permitting)</p>
+</div>
+<div id="may-4" class="section level3">
+<h3>May 4</h3>
+<p>Morning departure.</p>
+</div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 

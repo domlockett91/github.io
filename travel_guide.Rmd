@@ -11,7 +11,7 @@ output:
 
 ## Arrival
 
-The Washington University campus is about 20 minutes by car from [St Louis Lambert International Airport](https://www.google.com/maps/place/St.+Louis+Lambert+International+Airport/@38.7394275,-90.3817249,13z/data=!4m12!1m6!3m5!1s0x87df36b4c56388f1:0x9dabcdbc663077a6!2sSt.+Louis+Lambert+International+Airport!8m2!3d38.7503222!4d-90.3754521!3m4!1s0x87df36b4c56388f1:0x9dabcdbc663077a6!8m2!3d38.7503222!4d-90.3754521) is a focus city for Southwest Airlines, which has a dedicated terminal. All other airlines are based in Terminal 1, which has an iconic copper roof. Rental cars are available, most of which require a shuttle to a nearby location. When mapping your drive to or from the airport to your hotel/dorm, be sure to select the appropriate terminal.
+The Washington University campus is about 20 minutes by car from [St Louis Lambert International Airport](https://www.google.com/maps/place/St.+Louis+Lambert+International+Airport/@38.7394275,-90.3817249,13z/data=!4m12!1m6!3m5!1s0x87df36b4c56388f1:0x9dabcdbc663077a6!2sSt.+Louis+Lambert+International+Airport!8m2!3d38.7503222!4d-90.3754521!3m4!1s0x87df36b4c56388f1:0x9dabcdbc663077a6!8m2!3d38.7503222!4d-90.3754521) is a focus city for Southwest Airlines, which has a dedicated terminal. All other airlines are based in Terminal 1, which has an iconic copper roof. Rental cars are available, most of which require a shuttle to a nearby location. When mapping your drive to or from the airport to your hotel, be sure to select the appropriate terminal.
 <br>
 
 ### Metrolink

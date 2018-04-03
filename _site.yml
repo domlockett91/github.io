@@ -12,7 +12,7 @@ navbar:
 output_dir: "."
 output:
   html_document:
-    theme: journal
+    theme: paper
     highlight: textmate
 #    include:
 #      after_body: _footer.html

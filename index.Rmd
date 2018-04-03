@@ -8,7 +8,7 @@ output:
 
 ----
 
-Thank you for your interest in the Political Science Department's first collaborative computer programming event! This page includes details regarding the goals of the event as well as information about lodging and WashU contacts.
+Thank you for your interest in the Political Science Department's first collaborative computer programming event! This page includes details regarding the goals of the event as well as information about lodging and WashU contacts.We hope to host a collaboration which is able to break down institutional and field barriers between scholars, generate new ideas, and highlight the strengths of the WUSTL political science program.
 
 **BUILD:**
 
