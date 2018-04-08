@@ -15,7 +15,7 @@ The goal of this conference is to enable and nurture conversations which might n
 
 ### The Mayoral Classification Challenge
 
-The aim of our conference will be to establish which elected mayor does the best job engaging with citizens: this outcome can be measured in a couple of different ways. We will collect  the social media data (both comments and reactions on Twitter and FB) from all mayors in the United States who are included in the Council of Mayors (mayors who are in cities over 30,000 residents).  Separately we will also collect data on mayoral traits: vote share in their elections, the length of their service in office, the type of primary election, their gender, their previous elected experience, their partisanship, their race, their ethnicity, whether they were elected in a partisan election, etc.).   We will encourage you and your team to exploit the data we have provided, to think deeply about methods and measurement, and to consider seriously what criteria we should use in evaluating mayoral responsiveness.  
+The aim of our conference will be to establish which elected mayor does the best job engaging with citizens: this outcome can be measured in a couple of different ways. We will collect  the social media data (both comments and reactions on Twitter and FB) from all mayors in the United States who are included in the Council of Mayors (mayors who are in cities over 30,000 residents).  Separately we will also collect data on mayoral traits: vote share in their elections, the length of their service in office, the type of primary election, their gender, their previous elected experience, their partisanship, their race, their ethnicity, whether they were elected in a partisan election, etc. We will encourage you and your team to exploit the data we have provided, to think deeply about methods and measurement, and to consider seriously what criteria we should use in evaluating mayoral responsiveness.  
 
 ----
 
@@ -28,7 +28,7 @@ The aim of our conference will be to establish which elected mayor does the best
 - [Melody Crowder-Meyer ](http://www.melodycrowdermeyer.org/), Assitant Professor of Political Science, Davidson College
 - [Matt Dickenson](http://mattdickenson.com/), Software Engineer
 - [Liz Gerber ](http://www-personal.umich.edu/~ergerber/Welcome.html), Professor of Public Policy, University of Michigan
-- [Justin Grimmer ](https://www.justingrimmer.org/), Associate Professor of Political Science, University of Chhicago'
+- [Justin Grimmer ](https://www.justingrimmer.org/), Associate Professor of Political Science, University of Chicago
 - [Chris Lucas](http://christopherlucas.org/), Assistant Professor of Political Science, Washington University in St. Louis
 - [Stella Rouse](http://gvptsites.umd.edu/srouse/), Associate Professor of Government and Politics
 - [Alexandra Siegel](https://wp.nyu.edu/smapp/about-2/), PhD candidate, New York University
@@ -36,28 +36,27 @@ The aim of our conference will be to establish which elected mayor does the best
 ### WashU
 
 #### Professors
-
-- [Betsy Sinclair](https://pages.wustl.edu/betsysinclair) 
-- [Jacob Montgomery](http://pages.wustl.edu/montgomery), Associate Professor of Political Science
-- [Margit Tavits](http://pages.wustl.edu/tavits), Professor of Political Science
+- [Sanmay Das ](http://www.cse.wustl.edu/~sanmay/), Associate Professor of Computer Science and Engineering
+- [Justin Fox](http://pages.wustl.edu/justinfox), Associate Professor of Political Science
 - [Hedy Lee](https://soc.washington.edu/people/hedwig-hedy-lee), Associate Professor of Sociology 
-- [Justin Fox](https://polisci.wustl.edu/faculty/justin-fox) 
-- [Sanmay Das ] (http://www.cse.wustl.edu/~sanmay/), Associate Professor of Computer Science and Engineering
- (WUSTL Computer Science)
-
+- [Jacob Montgomery](http://pages.wustl.edu/montgomery), Associate Professor of Political Science
+- [Betsy Sinclair](https://pages.wustl.edu/betsysinclair), Associate Professor of Political Science
+- [Margit Tavits](http://pages.wustl.edu/tavits), Professor of Political Science
+ 
 
 #### Graduate Students
-
-- [Erin Rossiter](https://polisci.wustl.edu/faculty/erin-rossiter), Political Science
 - [Ryden Butler](https://polisci.wustl.edu/faculty/ryden-butler), Political Science
+- [David Carlson](https://sites.wustl.edu/davidcarlson/), Political Science
+- [Dominique Lockett](https://polisci.wustl.edu/faculty/dominique-lockett), Political Science
 - [JB Duck-Mayr](http://jbduckmayr.com/), Political Science
 - [Bryant Moy](https://polisci.wustl.edu/faculty/bryant-moy), Political Science
-- [Patrick Rickert](https://polisci.wustl.edu/faculty/patrick-rickert), Political Science
-- [Min Hee Seo](https://sites.wustl.edu/minheeseo/), Political Science
 - [Michell Torres Pacheco](http://smtorres.org/), Political Science
+- [Patrick Rickert](https://polisci.wustl.edu/faculty/patrick-rickert), Political Science
+- [Erin Rossiter](https://polisci.wustl.edu/faculty/erin-rossiter), Political Science
+- [Min Hee Seo](https://sites.wustl.edu/minheeseo/), Political Science
 - [Patrick Silva](https://polisci.wustl.edu/faculty/patrick-cunha-silva), Political Science
-- [Luwei Ying](https://polisci.wustl.edu/faculty/luwei-ying-0), Political Science
 - [Hao Yan](http://www.cse.wustl.edu/~haoyan/), Computer Science
+- [Luwei Ying](https://polisci.wustl.edu/faculty/luwei-ying-0), Political Science
 
 ----
 
