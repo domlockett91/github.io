@@ -41,8 +41,11 @@ The aim of our conference will be to establish which elected mayor does the best
 - [Hedy Lee](https://soc.washington.edu/people/hedwig-hedy-lee), Associate Professor of Sociology 
 - [Jacob Montgomery](http://pages.wustl.edu/montgomery), Associate Professor of Political Science
 - [Betsy Sinclair](https://pages.wustl.edu/betsysinclair), Associate Professor of Political Science
-- [Margit Tavits](http://pages.wustl.edu/tavits), Professor of Political Science
- 
+- [Guillermo Rosas](http://pages.wustl.edu/grosas),  Associate Professor of Political Science
+- [Andrew Reeves](http://www.andrewreeves.org/), Associate Professor of Political Science
+- [Steven S. Smith](https://polisci.wustl.edu/steven_smith), Professor of Political Science
+- [Ariela Schachter](http://pages.wustl.edu/schachter), Assistant Professor of Sociology
+
 
 #### Graduate Students
 - [Ryden Butler](https://polisci.wustl.edu/faculty/ryden-butler), Political Science
@@ -50,13 +53,12 @@ The aim of our conference will be to establish which elected mayor does the best
 - [Dominique Lockett](https://polisci.wustl.edu/faculty/dominique-lockett), Political Science
 - [JB Duck-Mayr](http://jbduckmayr.com/), Political Science
 - [Bryant Moy](https://polisci.wustl.edu/faculty/bryant-moy), Political Science
-- [Michell Torres Pacheco](http://smtorres.org/), Political Science
 - [Patrick Rickert](https://polisci.wustl.edu/faculty/patrick-rickert), Political Science
 - [Erin Rossiter](https://polisci.wustl.edu/faculty/erin-rossiter), Political Science
 - [Min Hee Seo](https://sites.wustl.edu/minheeseo/), Political Science
 - [Patrick Silva](https://polisci.wustl.edu/faculty/patrick-cunha-silva), Political Science
 - [Hao Yan](http://www.cse.wustl.edu/~haoyan/), Computer Science
-- [Luwei Ying](https://polisci.wustl.edu/faculty/luwei-ying-0), Political Science
+
 
 ----
 
