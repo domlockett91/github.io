@@ -38,7 +38,7 @@ The aim of our conference will be to establish which elected mayor does the best
 #### Faculty
 - [Sanmay Das ](http://www.cse.wustl.edu/~sanmay/), Associate Professor of Computer Science and Engineering
 - [Justin Fox](http://pages.wustl.edu/justinfox), Associate Professor of Political Science
-- [Hedy Lee](https://soc.washington.edu/people/hedwig-hedy-lee), Associate Professor of Sociology 
+- [Hedwig Lee](https://artsci.wustl.edu/faculty-staff/hedwig-lee), Associate Professor of Sociology 
 - [Jacob Montgomery](http://pages.wustl.edu/montgomery), Associate Professor of Political Science
 - [Betsy Sinclair](https://pages.wustl.edu/betsysinclair), Associate Professor of Political Science
 - [Guillermo Rosas](http://pages.wustl.edu/grosas),  Associate Professor of Political Science
