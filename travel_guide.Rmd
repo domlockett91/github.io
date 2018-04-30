@@ -46,7 +46,7 @@ Terminal 2: Exit Door 12
 
 All collaborators will be staying at the [Moonrise Hotel](https://moonrisehotel.com/the-hotel/) on the bustling Delmar Loop. The hotel is just minutes away from the Metrolink and a a mile away from [Washington University in St. Louis](https://wustl.edu/wp-content/uploads/2017/06/Danforth-Campus-Map-2017.pdf) (D4 106).
 
-[Directions](https://www.google.com/maps/dir/Moonrise+Hotel,+6177+Delmar+Blvd,+St.+Louis,+MO+63112/Seigle+Hall,+St.+Louis,+MO/@38.6510304,-90.3099984,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x87df4aaa6155fc13:0x1c89cb4a47d03dc9!2m2!1d-90.2987076!2d38.6555695!1m5!1m1!1s0x87d8cab396a2c315:0x370028dc042e3906!2m2!1d-90.3125344!2d38.6487983!3e2)
+[Directions to/from hotel](https://www.google.com/maps/dir/Moonrise+Hotel,+6177+Delmar+Blvd,+St.+Louis,+MO+63112/Seigle+Hall,+St.+Louis,+MO/@38.6510304,-90.3099984,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x87df4aaa6155fc13:0x1c89cb4a47d03dc9!2m2!1d-90.2987076!2d38.6555695!1m5!1m1!1s0x87d8cab396a2c315:0x370028dc042e3906!2m2!1d-90.3125344!2d38.6487983!3e2)
 
 
 ---- 
@@ -58,9 +58,12 @@ Saint Louis has a vibrant and diverse community which offers a wide variety of f
 ### Food
 
 - [Eclipse Restaurant](https://moonrisehotel.com/dining-at-the-moonrise-hotel/) (Dining at Moonrise)
+- [Pi Pizzaria](http://pi-pizza.com/theloop)
+- [Tavolo](http://www.tavolov.com/)
+- [Salt + Smoke](http://saltandsmokestl.com/menu/)
 - [Fork & Stix](http://forknstix.com/)
 - [U-City Grill](https://www.riverfronttimes.com/stlouis/u-city-grill/Location?oid=2688527)
-- [Salt + Smoke](http://saltandsmokestl.com/menu/)
+
 
 
 <br>
