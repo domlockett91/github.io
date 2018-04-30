@@ -84,6 +84,11 @@ You are responsible for travel to and from your hotel (it is walkable, but you c
 
 When you get to Seigle, go to the second floor and turn right. Room 248 is a conference room all the way in the back of the department.
 
+Map of Seigle Hall:
+
+<center><img src="images/Map.png" width="450px"></center> 
+
+
 Here's how things will work:
 
 - We will do a short presentation outlining the data and our goals for the day **starting at 8:30AM**.
