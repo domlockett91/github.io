@@ -1,0 +1,17 @@
+---
+title: ""
+output:
+ html_document
+header-includes:
+- \usepackage{pdfpages}
+- \usepackage{captioner}
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r }
+knitr::include_graphics("Lockett_CV.pdf")
+```

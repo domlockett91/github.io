@@ -1,5 +1,5 @@
 ---
-title: "BUILD Conference"
+title: "Dominique Lockett"
 author:  "Washington University in St. Louis"
 output:
   html_document:
@@ -7,12 +7,23 @@ output:
 ---
 
 ----
-***BUIL***ding ***D***ata science
 
 
-Thank you for your interest in the Political Science Department's first collaborative computer programming event! This page briefly outlines the goals of the event and provides information about participants, lodging, and WashU contacts. 
+<div style="width:300px; height:200px">
 
-Our aim is to host a collaboration which is able to break down institutional and field barriers between scholars, generate new ideas, and highlight the strengths of the WUSTL political science program.
+![](images/picme.jpg)
+
+</div>
 
 
+
+<div style="text-align: right"> 
+Hi! I am a political science PhD student at Washington University in St.
+
+Louis. I study political methodology and American political behavior. I am
+
+particiularly interested in how identity-- ranging from partisan identity
+
+to racial identity-- impacts behavior amongst Americans. 
+</div>
 
