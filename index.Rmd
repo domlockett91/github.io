@@ -18,9 +18,9 @@ output:
 
 
 <div style="text-align: right"> 
-Hi! I am a political science PhD student at Washington University in St.
+Hi! I am a political science PhD student at Washington University in St. Louis.
 
-Louis. I study political methodology and American political behavior. I am
+I study political methodology and American political behavior. I am
 
 particiularly interested in how identity-- ranging from partisan identity
 
