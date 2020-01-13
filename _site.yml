@@ -2,12 +2,10 @@ name: "R Markdown Websites Tutorial"
 navbar:
   title: "HOME"
   left:
-    - text: "About Event"
-      href: about_event.html
-    - text: "Travel Guide"
-      href: travel_guide.html
-    - text: "Contact Us"
-      href: contact_us.html
+    - text: "CV"
+      href: Lockett_CV.pdf
+    - text: "Contact"
+      href: contact.html
    
 output_dir: "."
 output:
