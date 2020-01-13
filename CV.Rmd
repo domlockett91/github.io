@@ -8,10 +8,4 @@ header-includes:
 ---
 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r }
-knitr::include_graphics("Lockett_CV.pdf")
-```
+[CV](Lockett_CV.pdf)
