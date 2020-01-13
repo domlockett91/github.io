@@ -2,7 +2,6 @@
 title: ""
 ---
 <br/><br/>
-<br/><br/>
 
 
 
@@ -18,6 +17,6 @@ St. Louis, Missouri 63130
 
 __Email__: <dlockett@wustl.edu>
 
-__GitHub__: github.com/domlockett>.
+__GitHub__: github.com/domlockett
 
 </p>
