@@ -9,5 +9,4 @@ header-includes:
 
 <br/><br/>
 <br/><br/>
-<br/><br/>
 Please see my CV [here](Lockett_CV.pdf)
