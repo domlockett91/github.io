@@ -7,5 +7,7 @@ header-includes:
 - \usepackage{captioner}
 ---
 
-
-[CV](Lockett_CV.pdf)
+<br/><br/>
+<br/><br/>
+<br/><br/>
+Please see my CV [here](Lockett_CV.pdf)
