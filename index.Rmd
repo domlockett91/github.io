@@ -2,28 +2,39 @@
 title: "Dominique Lockett"
 author:  "Washington University in St. Louis"
 output:
-  html_document:
-    fig_width: 1
+  html_document
 ---
 
 ----
 
+<html>
 
-<div style="width:200px; height:200px">
-
-![](images/picme.jpg)
-
+<div class="wrapper style1 first">
+			
+<article class="container" id="top">
+				
+<div class="row">
+					
+<div class="4u">
+						
+<span class="image fit"><img src="images/picme.JPG" alt="" />
+							
+</span>
+							
 </div>
-
-
-
-<div style="text-align: right"> 
-Hi! I am a political science PhD student at Washington University in St. Louis.
-
-I study political methodology and American political behavior. I am
-
-particiularly interested in how identity-- ranging from partisan identity
-
-to racial identity-- impacts behavior amongst Americans. 
+						
+<div class="8u">
+						
+<p>Hi! I am a political science PhD student at Washington University in St. Louis. I study political methodology and American political behavior. I am particiularly interested in how identity-- ranging from partisan identity to racial identity-- impacts behavior amongst Americans..</p>
+							
 </div>
+						
+</div>
+					
+</article>
+				
+</div>
+</html>
+
+
 
