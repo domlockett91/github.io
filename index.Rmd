@@ -10,30 +10,20 @@ output:
 <html>
 
 <div class="wrapper style1 first">
-			
 <article class="container" id="top">
-				
 <div class="row">
-					
 <div class="4u">
-						
-<span class="image fit"><img src="images/picme.JPG" alt="" />
-							
-</span>
-							
+<span class="image fit"><img src="images/picme.JPG" width="200" height="300" alt="" /></span>
 </div>
-						
 <div class="8u">
-						
-<p>Hi! I am a political science PhD student at Washington University in St. Louis. I study political methodology and American political behavior. I am particiularly interested in how identity-- ranging from partisan identity to racial identity-- impacts behavior amongst Americans..</p>
-							
+<header>
+</header>
+<p>Hi! I am a political science PhD student at Washington University in St. Louis. I study political methodology and American political behavior. I am particiularly interested in how identity– ranging from partisan identity to racial identity– impacts behavior amongst Americans..</p>
 </div>
-						
 </div>
-					
 </article>
-				
 </div>
+</body>
 </html>
 
 
