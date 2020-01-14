@@ -1,0 +1,17 @@
+---
+title: ""
+output:
+ html_document
+header-includes:
+- \usepackage{pdfpages}
+- \usepackage{captioner}
+---
+<br></br>
+
+## Publications
+
+Guess, Andrew, Dominique Lockett, Benjamin Lyons, Brendan Nyhan, Jacob M. Montgomery, and Jason Reifler. 2020. “'Fake news' may have limited effects beyond increasing beliefs in false claims.” *The Misinformation Review.*
+
+## Working Papers
+
+Lockett, Dominique. 2020. Improving Evaluations of Argument Evaluations. 
