@@ -10,7 +10,7 @@ header-includes:
 
 ## Publications
 
-Guess, Andrew, Dominique Lockett, Benjamin Lyons, Brendan Nyhan, Jacob M. Montgomery, and Jason Reifler. 2020. “'Fake news' may have limited effects beyond increasing beliefs in false claims.” *The Misinformation Review.*
+Guess, Andrew, Dominique Lockett, Benjamin Lyons, Brendan Nyhan, Jacob M. Montgomery, and Jason Reifler. 2020. [“'Fake news' may have limited effects beyond increasing beliefs in false claims.”](https://misinforeview.hks.harvard.edu/article/fake-news-limited-effects-on-political-participation/) *The Misinformation Review.*
 
 ## Working Papers
 
