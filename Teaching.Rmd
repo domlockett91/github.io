@@ -16,7 +16,7 @@ Skill Lab: Introduction to Python for Public Health Data Analysis. **Summer 2020
 
 ### Teaching Assistant
 
-Quantitative Political Methodology 2. **Fall 2020**.
+Quantitative Political Methodology 2. **Fall 2020**.\
 Instructor: Jacob Montgomery\
 
 Topics in Politics: Political Data Science. **Spring 2020**.\
