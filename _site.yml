@@ -7,9 +7,9 @@ navbar:
     - text: "Research"
       href: Research.html
     - text: "Teaching"
-      href: teaching.html
+      href: Teaching.html
     - text: "Contact"
-      href: contact.html
+      href: Contact.html
    
 output_dir: "."
 output:
