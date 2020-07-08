@@ -1,0 +1,33 @@
+---
+title: ""
+output:
+ html_document
+header-includes:
+- \usepackage{pdfpages}
+- \usepackage{captioner}
+---
+<br></br>
+
+### Instructor
+
+Skill Lab: Introduction to Python for Public Health Data Analysis. **Summer 2020**.
+
+### Teaching Assistant
+
+Quantitative Political Methodology 2. **Fall 2020**.
+
+Topics in Politics: Political Data Science. **Spring 2020**.
+
+Immigration Identity and the Internet. **Fall 2019**.
+
+Topics in Political and Social Theory: Constitutionalism. **Spring 2019**
+
+History of Political Thought I: Justice Virtue and the Soul. **Spring 2019**
+
+Topics in Politics: Theories of Social Justice. **Fall 2018**.  
+
+**Spring 2018**.
+
+
+
+

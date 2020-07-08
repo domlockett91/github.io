@@ -3,7 +3,11 @@ navbar:
   title: "HOME"
   left:
     - text: "CV"
-      href: Lockett_CV.pdf
+      href: cv.html
+    - text: "Research"
+      href: Research.html
+    - text: "Teaching"
+      href: teaching.html
     - text: "Contact"
       href: contact.html
    

@@ -6,47 +6,11 @@ output:
 ---
 
 ----
-
-<html>
-<head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122820882-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'UA-122820882-1');
-</script>
-
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.scrolly.min.js"></script>
-<script src="js/init.js"></script>
-<noscript>
-<link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/style-desktop.css" />
-</noscript>
-<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-</head>
-<div class="wrapper style1 first">
-<article class="container" id="top">
-<div class="row">
-<div class="4u">
-<span class=""><img src="images/picme.JPG" width="200" height="300"/></span>
-</div>
-<div class="8u">
-<header>
-</header>
-<p>Hi! I am a political science PhD student at Washington University in St. Louis. I study political methodology and American political behavior, with an emphasis on the effects of class and social identities. My research relies on experimental methods to understand how identity develops over time and the ways in which identity interacts with forms of communication and decision making.</p>
-</div>
-</div>
-</article>
-</div>
-</body>
-</html>
+```{r pressure, echo=FALSE, out.width= "35%", out.extra='style="float:right; padding:0 20px 20px 40px"'}
+knitr::include_graphics("images/picme.jpg")
+```
+<br></br>
+Hi! I am a political science PhD student at Washington University in St. Louis. I study political methodology and American political behavior, with an emphasis on the effects of class and social identities. My research relies on experimental methods to understand how identity develops over time and the ways in which identity interacts with forms of communication and decision making.</p>
 
 
 
