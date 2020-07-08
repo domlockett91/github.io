@@ -10,23 +10,34 @@ header-includes:
 
 ### Instructor
 
-Skill Lab: Introduction to Python for Public Health Data Analysis. **Summer 2020**.
+Skill Lab: Introduction to Python for Public Health Data Analysis. **Summer 2020**.\
+[[Syllabus](https://domlockett.github.io/website/Syllabus_5976.pdf); Course Evaluations (pending)]
+
 
 ### Teaching Assistant
 
 Quantitative Political Methodology 2. **Fall 2020**.
+Instructor: Jacob Montgomery\
 
-Topics in Politics: Political Data Science. **Spring 2020**.
+Topics in Politics: Political Data Science. **Spring 2020**.\
+Instructor: Jacob Montgomery\
+[[Syllabus](https://domlockett.github.io/website/PDS2020.pdf); [Course Evaluations](https://domlockett.github.io/website/SP2020%20L32%204625%2001%20(Dominique%20Lockett).pdf)]
 
-Immigration Identity and the Internet. **Fall 2019**.
+Immigration Identity and the Internet. **Fall 2019**.\
+Instructor: Sunita Parikh\
+[[Syllabus](https://domlockett.github.io/website/Syllabus%20III.pdf); [Course Evaluations](https://domlockett.github.io/website/FL2019%20L32%204373%2001.pdf)]
 
-Topics in Political and Social Theory: Constitutionalism. **Spring 2019**
+Topics in Political and Social Theory: Constitutionalism. **Spring 2019**.\
+Instructor: Randall Calvert; Frank Lovett\
+[[Syllabus](https://domlockett.github.io/website/Syllabus-Constitutionalism.pdf)]
 
-History of Political Thought I: Justice Virtue and the Soul. **Spring 2019**
+History of Political Thought I: Justice Virtue and the Soul. **Spring 2019**.\
+Instructor: Frank Lovett\
+[[Syllabus](https://domlockett.github.io/website/Syllabus-Political%20Thought.pdf); [Course Evaluations](https://domlockett.github.io/website/SP2019%20L32%20391%2001%20(Dominique%20Lockett).pdf)]
 
-Topics in Politics: Theories of Social Justice. **Fall 2018**.  
-
-
+Topics in Politics: Theories of Social Justice. **Fall 2018**.\
+Instructor: Frank Lovett\
+[[Syllabus](https://domlockett.github.io/website/syllabus_theories.pdf); [Course Evaluations](https://domlockett.github.io/website/WashU%20Fall%202018%20Instructor%20Report.pdf)]
 
 
 
