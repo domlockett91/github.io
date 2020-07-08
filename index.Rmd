@@ -6,7 +6,7 @@ output:
 ---
 
 ----
-```{r pressure, echo=FALSE, out.width= "35%", out.extra='style="float:right; padding:0 20px 20px 40px"'}
+```{r pressure, echo=FALSE, out.width= "30%", out.extra='style="float:right; padding:0 20px 20px 40px"'}
 knitr::include_graphics("images/picme.jpg")
 ```
 <br></br>

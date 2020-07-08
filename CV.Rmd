@@ -8,4 +8,4 @@ header-includes:
 ---
 
 <br/><br/>
-[CV](Lockett_CV.pdf)
+View CV [here](Lockett_CV.pdf).
