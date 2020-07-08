@@ -1,17 +1,16 @@
 ---
-title: ""
+title: "Research"
 output:
  html_document
 header-includes:
 - \usepackage{pdfpages}
 - \usepackage{captioner}
 ---
-<br></br>
 
-## Publications
+### Publications
 
 Guess, Andrew, Dominique Lockett, Benjamin Lyons, Brendan Nyhan, Jacob M. Montgomery, and Jason Reifler. 2020. [“'Fake news' may have limited effects beyond increasing beliefs in false claims.”](https://misinforeview.hks.harvard.edu/article/fake-news-limited-effects-on-political-participation/) *The Misinformation Review.*
 
-## Working Papers
+### Working Papers
 
 Lockett, Dominique. 2020. Using Objectivity to Improve Argument Evaluations. 
