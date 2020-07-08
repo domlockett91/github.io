@@ -3,7 +3,7 @@ navbar:
   title: "HOME"
   left:
     - text: "CV"
-      href: cv.html
+      href: CV.html
     - text: "Research"
       href: Research.html
     - text: "Teaching"
