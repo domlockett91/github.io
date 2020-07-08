@@ -6,7 +6,7 @@ title: "Contact"
 library(fontawesome)
 ```
 
-<br></br>
+----
 
 
 Washington University in St. Louis\

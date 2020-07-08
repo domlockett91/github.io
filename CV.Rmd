@@ -6,6 +6,6 @@ header-includes:
 - \usepackage{pdfpages}
 - \usepackage{captioner}
 ---
+----
 
-<br/><br/>
 View CV [here](Lockett_CV.pdf).
