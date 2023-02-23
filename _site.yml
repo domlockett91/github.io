@@ -2,12 +2,8 @@ name: "R Markdown Websites Tutorial"
 navbar:
   title: "HOME"
   left:
-    - text: "CV"
-      href: CV.html
-    - text: "Research"
-      href: Research.html
-    - text: "Teaching"
-      href: Teaching.html
+    - text: "Portfolio"
+      href: Portfolio.html
     - text: "Contact"
       href: Contact.html
    
