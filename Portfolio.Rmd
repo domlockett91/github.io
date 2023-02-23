@@ -1,0 +1,19 @@
+---
+title: "Contact"
+---
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+```
+
+----
+
+
+Washington University in St. Louis\
+Department of Political Science\
+Seigle Hall 278\
+St. Louis, Missouri 63130\
+\
+`r fa("envelope")` [dlockett@wustl.edu](mailto:dlockett@wustl.edu)\
+`r fa("github")` [domlockett](https://github.com/domlockett)\
+
