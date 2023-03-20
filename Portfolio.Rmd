@@ -1,32 +1,198 @@
----
-title: "Contact"
----
 
-```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
-library(fontawesome)
-```
+<style>
+.collapsible {
+  background-color: #f5f5f5;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-weight: bold;
+}
 
-----
+.active, .collapsible:hover {
+  background-color: #ddd;
+}
 
-<details>
-  <summary>Click me</summary>
+.collapsible:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+</style>
+
+<button class="collapsible">Projects</button>
+
+<div class="content">
+  <p><ul>
   
-  ### Heading
-  1. Foo
-  2. Bar
-     * Baz
-     * Qux
+  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">IDENTIFYING WHAT CONSTITUTES A POLITICAL ADVERTISEMENT </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">
+[DATA ANALYSIS & VISUALIZTION; CONJOINT EXPERIMENT]</mark></button>
 
-  ### Some Code
-  ```js
-  function logSomething(something) {
-    console.log('Something', something);
-  }
-  ```
-</details>
+<div class="content">
+  <ul>
+  <br>
+  
+  
+<p style="padding-left: 5px;"> In this project, we investigated  social media users' perceptions of digital political ads. We measured users' opinions on how platforms should design political ad UX and policies with the goal of establishing a baseline understanding of user opinions including the permissibly of political ads, microtargeting, transparency, and exemptions for news organizations.</p>
 
-<details><summary>Hello</summary><blockquote>
-  <details><summary>World</summary><blockquote>
-    :smile:
-  </blockquote></details>
-</blockquote></details>
+<p style="padding-left: 5px;"> The primary objective of this research was to understand what factors of ads (and users themselves) may contribute to their perceptions of how `political' given digital ads are. To do this, we conducted a conjoint experiment asking respondents to compare artificial Facebook ads where we alter their source, content, and political orientation. This conjoint design allows us to isolate the independent effects of each component on perceptions of the political.  </p>
+
+<p style="padding-left: 5px;"> We designed a conjoint experiment to understand how individual components of composite stimuli affect human judgements and perceptions. We also conducted a within-between experiment asking respondents to evaluate real ads drawn from the Facebook Ad Library. </p>
+
+
+  </ul>
+</div>
+
+  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">MEASURING THE EFFICACY OF IN-GROUP CORRECTIONS</mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">[RESEARCH DESIGN; DATA ANALYSIS & VISUALIZATION]</mark></button>
+
+<div class="content">
+  <p><ul>
+
+
+  
+In this project we explored the utility of corrections to misinformation on social media. We posit that comments from a member of one's in-group may be more effective in promoting accurate beliefs relative to members of out-groups, especially when the misinformation relates to their ethnic group. Corrections have been shown to be more persuasive when coming from trusted sources. There are few source cues available to individuals in posts and comments on social media. We believe individuals will rely on cues such as name and profile picture to evaluate their closeness to one's ethnic group. We suspect that in-group closeness will increase the credibility of a comment relative to a comment from a member of another group because of the sense of cohesion between members of the same ethnic group.
+
+Hypothesis 1: Corrective comments will reduce misperceptions (i.e. misperceptions will be lower in the correction conditions than in the no correction condition and control condition).
+
+Hypothesis 2: Corrective comments from culturally relevant organizations will more effectively reduce misperceptions.
+
+To test if corrective comments from in-groups are more effective than comments from members of other groups in promoting accurate beliefs we conducted three experiments.
+
+The experiments relied on two survey waves that contained an oversampling of black (both surveys) and Latino (first survey only) respondents. Both experiments were sponsored by the Weidenbaum center and distributed by NORC.
+
+Study 1 had a total of 2030 respondents. There were ~500 black respondents and ~500 Latino respondents.
+
+Study 2 had a total of 1502 which included ~500 black respondents.
+
+Across the two experiments we found no evidence supporting our theories. Study 1 found that providing corrections in the comments is an effective means to reducing misperceptions, however, the culturally relevant correction was not particularly effective among Latinos. Study 2 did not find results to uphold the theory that culturally relevant comments are more effective at reducing misperceptions. Among all participants in both experiments, the in-groups were the most effective, which may suggest that members of out-groups defer to other ethnic groups when the misinformation does not relate to them.
+  
+  </ul></p>
+</div>
+
+
+
+  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">EXPLORING HOW NEWS PARTISANSHIP SHAPES DISCOURSE</mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">[SCRAPING,TRANSFORMING & ANALYZING BIG TEXT DATA]</mark></button>
+
+<div class="content">
+  <p><ul>
+
+
+  </ul></p>
+</div>
+
+
+  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">PREDICTING HETEROGENEOUS TREATMENT EFFECTS </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"> [TUNING HYPER-PARAMETERS TO IMPROVE DEEP LEARNING ELECTION PREDICTIONS] </mark></button>
+
+<div class="content">
+  <p><ul>
+  
+  WELLL THEN SING ENSEMBLE BAYESIAN MODEL AVERAGING (EBMA) : USING 
+  
+  
+  </ul></p>
+</div>
+
+  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">EXAMINING THE IMPACT OF FAKE NEWS ON BELIEFS </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"> [EXPERIMENTAL DESIGN; CAUSAL INFERENCE;DATA ANALYSIS & VISUALIZATION] </mark></button>
+
+<div class="content">
+  <p><ul>
+  
+  </ul></p>
+</div>
+
+  <button class="collapsible"></button>
+
+<div class="content">
+  <p><ul>
+  
+  </ul></p>
+</div>
+
+  <button class="collapsible"></button>
+
+<div class="content">
+  <p><ul>
+  
+  </ul></p>
+</div>
+  </ul></p>
+</div>
+
+<button class="collapsible">Methods coursework</button>
+
+<div class="content">
+  <p><ul>
+  <li><strong>Mathematical modeling</strong> (2017)<br>
+  <p style="padding-left: 20px;">Taught by Randy Calvert. Primary materials: <i>Mathematics for Economists</i> (Pemberton and Rau). Required.<br>
+  This course covered single-variable calculus and portions of multi-variate calculus, linear algebra, and probability theory exposing us to topics including sets and relations; probability; differential calculus and optimization; difference equations; and linear algebra.</li></p>
+  
+  <li><strong>Research design</strong> (2017)<br>
+ <p style="padding-left: 20px;"> Taught by Matt Gabel. Primary materials: <i> Political Science and the Logic of Representations</i> (Kevin A. Clarke, David M. Primo); <i>The logic of real arguments</i> (Alec Fisher). Required.<br>
+  This course focused on the philosophy of science and its implications for and applications in political science research. The course had three parts:  examining the nature of scientific knowledge and scientific progress; considering how scientific principles of defining, evaluating, and developing knowledge can be applied to understanding political phenomena; identifying standards for evaluation and making good social scientific arguments and explanations.</li>
+  
+  <li><strong>Quantitative political methodology I</strong> (2018)<br>
+  <p style="padding-left: 20px;">Taught by Guillermo Rosas. Primary materials: <i> Linear Models with R </i>(Julian Faraway). Required.<br>
+  This course explored the fundamentals of linear regression models in both scalar and matrix form. Problem sets focused on estimation; inference; specification; diagnostic tools; data management; statistical computation.</li>
+  
+  <li><strong>Theories of Individual and Collective Choice I</strong> (2018)<br>
+  <p style="padding-left: 20px;">Taught by Keith Schnakenberg. Primary materials: <i> Game Theory: An Introduction</i> (Steven Tadelis). Required.<br>
+  This class was in an introduction to rational choice theory and exposed us to spatial theory of electoral competition; cooperative game theory; and general equilibrium theory.</li>
+  
+  <li><strong>Applied statistical programming</strong> (2018)<br>
+  <p style="padding-left: 20px;">Taught by Jacob Montgomery (advisor). Primary materials: <i> R for dummies</i> (de Vries and Meys); <i>Advanced R</i> (Hadley Wickham).<br>
+  This course aimed to build our skill in programming (R) and expose us to the underpinnings of object-oriented programming. Focused on teaching foundational meta-skills from computer science and statistics such as structures; control/flow; functions; version control/documentation; classes and methods; apply/parallel; debugging and creating packages.</li>
+  
+  <li><strong>Causal inference</strong> (2018)<br>
+  <p style="padding-left: 20px;">Taught by Julia Park.<br>
+  This coursed aimed to introduce theoretical frameworks for causality and the empirical tools used in the estimation of causal effects. This class had us learn and apply skills related to outcomes; causal graphs; experiments; matching; regression; difference-in-differences; instrumental variables; sensitivity analysis; regression discontinuity etc.</li>
+  
+  <li><strong>Quantitative political methodology II</strong> (2018)<br>
+  <p style="padding-left: 20px;">Taught by Jacob Montgomery (advisor). Primary materials: <i> Linear Models with R</i> (Julian Faraway). Required.<br>
+  This is a second course in political methodology covering advanced methods of statistical analysis for political and other social scientists. Covers maximum likelihood estimation for various cross-sectional, time series, and measurement models.</li>
+  
+  <li><strong>Maximum likelihood estimation</strong> (2019)<br>
+  <p style="padding-left: 20px;">Taught by Julia Park.<br>
+  This course focused on generalized linear model estimation. We had practical exposure to link functions for a number of models including multinomial and unordered models; ordered outcome models; duration models; count models etc.</li>
+  
+  <li><strong>Computational social science</strong> (2019)<br>
+  <p style="padding-left: 20px;">Taught by Christopher Lucas.<br> Primary materials: <i> Pattern Recognition and Machine Learning</i> (Christopher Bishop);<i> A Course in Machine Learning</i>  (Hal Daumé); <i>The Elements of Statistical Learning: Data Mining, Inference, and Prediction</i>  (Jerome Friedman, Trevor Hastie, Robert Tibshirani).<br>
+This coursed focused on exposing us to different types of data; including networks; text; audio; images; and videos. We began with a mechanistic approaches to supervised and unsupervised learning, then moved to statistical inference with probabilistic interpretations.</ul></p>
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script> 

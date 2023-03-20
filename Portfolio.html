@@ -11,24 +11,38 @@
 
 
 
-<title>Contact</title>
+<title>Portfolio.knit</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -41,32 +55,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -76,10 +66,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -96,40 +82,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 64px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h2 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h3 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h4 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h5 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h6 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -157,7 +119,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -169,7 +131,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -179,11 +141,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -195,13 +174,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -209,16 +187,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -262,7 +233,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -285,24 +256,319 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
-<h1 class="title toc-ignore">Contact</h1>
 
 </div>
 
 
-<hr />
-<p>Washington University in St. Louis<br />
-Department of Political Science<br />
-Seigle Hall 278<br />
-St. Louis, Missouri 63130<br />
-<br />
-<svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg> <a href="mailto:dlockett@wustl.edu">dlockett@wustl.edu</a><br />
-<svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> <a href="https://github.com/domlockett">domlockett</a><br />
+<style>
+.collapsible {
+  background-color: #f5f5f5;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: #ddd;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+</style>
+<button class="collapsible">
+Projects
+</button>
+<div class="content">
+<p>
+<ul>
+<button class="collapsible">
+<mark style="color:black;font-size:11px;background:#f5f5f5">IDENTIFYING
+WHAT CONSTITUTES A POLITICAL ADVERTISEMENT </mark>
+<mark style="color:gray;font-size:11px;background:#f5f5f5"> [DATA
+ANALYSIS &amp; VISUALIZTION; CONJOINT EXPERIMENT]</mark>
+</button>
+<div class="content">
+<ul>
+<p><br></p>
+<p style="padding-left: 5px;">
+In this project, we investigated social media users’ perceptions of
+digital political ads. We measured users’ opinions on how platforms
+should design political ad UX and policies with the goal of establishing
+a baseline understanding of user opinions including the permissibly of
+political ads, microtargeting, transparency, and exemptions for news
+organizations.
 </p>
+<p style="padding-left: 5px;">
+The primary objective of this research was to understand what factors of
+ads (and users themselves) may contribute to their perceptions of how
+`political’ given digital ads are. To do this, we conducted a conjoint
+experiment asking respondents to compare artificial Facebook ads where
+we alter their source, content, and political orientation. This conjoint
+design allows us to isolate the independent effects of each component on
+perceptions of the political.
+</p>
+<p style="padding-left: 5px;">
+We designed a conjoint experiment to understand how individual
+components of composite stimuli affect human judgements and perceptions.
+We also conducted a within-between experiment asking respondents to
+evaluate real ads drawn from the Facebook Ad Library.
+</p>
+</ul>
+</div>
+<button class="collapsible">
+<mark style="color:black;font-size:11px;background:#f5f5f5">MEASURING
+THE EFFICACY OF IN-GROUP CORRECTIONS</mark>
+<mark style="color:gray;font-size:11px;background:#f5f5f5">[RESEARCH
+DESIGN; DATA ANALYSIS &amp; VISUALIZATION]</mark>
+</button>
+<div class="content">
+<p>
+<ul>
+<p>In this project we explored the utility of corrections to
+misinformation on social media. We posit that comments from a member of
+one’s in-group may be more effective in promoting accurate beliefs
+relative to members of out-groups, especially when the misinformation
+relates to their ethnic group. Corrections have been shown to be more
+persuasive when coming from trusted sources. There are few source cues
+available to individuals in posts and comments on social media. We
+believe individuals will rely on cues such as name and profile picture
+to evaluate their closeness to one’s ethnic group. We suspect that
+in-group closeness will increase the credibility of a comment relative
+to a comment from a member of another group because of the sense of
+cohesion between members of the same ethnic group.</p>
+<p>Hypothesis 1: Corrective comments will reduce misperceptions
+(i.e. misperceptions will be lower in the correction conditions than in
+the no correction condition and control condition).</p>
+<p>Hypothesis 2: Corrective comments from culturally relevant
+organizations will more effectively reduce misperceptions.</p>
+<p>To test if corrective comments from in-groups are more effective than
+comments from members of other groups in promoting accurate beliefs we
+conducted three experiments.</p>
+<p>The experiments relied on two survey waves that contained an
+oversampling of black (both surveys) and Latino (first survey only)
+respondents. Both experiments were sponsored by the Weidenbaum center
+and distributed by NORC.</p>
+<p>Study 1 had a total of 2030 respondents. There were ~500 black
+respondents and ~500 Latino respondents.</p>
+<p>Study 2 had a total of 1502 which included ~500 black
+respondents.</p>
+<p>Across the two experiments we found no evidence supporting our
+theories. Study 1 found that providing corrections in the comments is an
+effective means to reducing misperceptions, however, the culturally
+relevant correction was not particularly effective among Latinos. Study
+2 did not find results to uphold the theory that culturally relevant
+comments are more effective at reducing misperceptions. Among all
+participants in both experiments, the in-groups were the most effective,
+which may suggest that members of out-groups defer to other ethnic
+groups when the misinformation does not relate to them.</p>
+</ul>
+</p>
+</div>
+<button class="collapsible">
+<mark style="color:black;font-size:11px;background:#f5f5f5">EXPLORING
+HOW NEWS PARTISANSHIP SHAPES DISCOURSE</mark>
+<mark style="color:gray;font-size:11px;background:#f5f5f5">[SCRAPING,TRANSFORMING
+&amp; ANALYZING BIG TEXT DATA]</mark>
+</button>
+<div class="content">
+<p>
+<ul>
+</ul>
+</p>
+</div>
+<button class="collapsible">
+<mark style="color:black;font-size:11px;background:#f5f5f5">PREDICTING
+HETEROGENEOUS TREATMENT EFFECTS </mark>
+<mark style="color:gray;font-size:11px;background:#f5f5f5"> [TUNING
+HYPER-PARAMETERS TO IMPROVE DEEP LEARNING ELECTION PREDICTIONS] </mark>
+</button>
+<div class="content">
+<p>
+<ul>
+<p>WELLL THEN SING ENSEMBLE BAYESIAN MODEL AVERAGING (EBMA) : USING</p>
+</ul>
+</p>
+</div>
+<button class="collapsible">
+<mark style="color:black;font-size:11px;background:#f5f5f5">EXAMINING
+THE IMPACT OF FAKE NEWS ON BELIEFS </mark>
+<mark style="color:gray;font-size:11px;background:#f5f5f5">
+[EXPERIMENTAL DESIGN; CAUSAL INFERENCE;DATA ANALYSIS &amp;
+VISUALIZATION] </mark>
+</button>
+<div class="content">
+<p>
+<ul>
+</ul>
+</p>
+</div>
+<button class="collapsible">
+</button>
+<div class="content">
+<p>
+<ul>
+</ul>
+</p>
+</div>
+<button class="collapsible">
+</button>
+<div class="content">
+<p>
+<ul>
+</ul>
+</p>
+</div>
+</ul>
+</p>
+</div>
+<button class="collapsible">
+Methods coursework
+</button>
+<div class="content">
+<p>
+<ul>
+<li>
+<strong>Mathematical modeling</strong> (2017)<br>
+<p style="padding-left: 20px;">
+Taught by Randy Calvert. Primary materials: <i>Mathematics for
+Economists</i> (Pemberton and Rau). Required.<br> This course covered
+single-variable calculus and portions of multi-variate calculus, linear
+algebra, and probability theory exposing us to topics including sets and
+relations; probability; differential calculus and optimization;
+difference equations; and linear algebra.
+</li>
+</p>
+<li>
+<strong>Research design</strong> (2017)<br>
+<p style="padding-left: 20px;">
+Taught by Matt Gabel. Primary materials: <i> Political Science and the
+Logic of Representations</i> (Kevin A. Clarke, David M. Primo); <i>The
+logic of real arguments</i> (Alec Fisher). Required.<br> This course
+focused on the philosophy of science and its implications for and
+applications in political science research. The course had three parts:
+examining the nature of scientific knowledge and scientific progress;
+considering how scientific principles of defining, evaluating, and
+developing knowledge can be applied to understanding political
+phenomena; identifying standards for evaluation and making good social
+scientific arguments and explanations.
+</li>
+<li>
+<strong>Quantitative political methodology I</strong> (2018)<br>
+<p style="padding-left: 20px;">
+Taught by Guillermo Rosas. Primary materials: <i> Linear Models with R
+</i>(Julian Faraway). Required.<br> This course explored the
+fundamentals of linear regression models in both scalar and matrix form.
+Problem sets focused on estimation; inference; specification; diagnostic
+tools; data management; statistical computation.
+</li>
+<li>
+<strong>Theories of Individual and Collective Choice I</strong>
+(2018)<br>
+<p style="padding-left: 20px;">
+Taught by Keith Schnakenberg. Primary materials: <i> Game Theory: An
+Introduction</i> (Steven Tadelis). Required.<br> This class was in an
+introduction to rational choice theory and exposed us to spatial theory
+of electoral competition; cooperative game theory; and general
+equilibrium theory.
+</li>
+<li>
+<strong>Applied statistical programming</strong> (2018)<br>
+<p style="padding-left: 20px;">
+Taught by Jacob Montgomery (advisor). Primary materials: <i> R for
+dummies</i> (de Vries and Meys); <i>Advanced R</i> (Hadley Wickham).<br>
+This course aimed to build our skill in programming (R) and expose us to
+the underpinnings of object-oriented programming. Focused on teaching
+foundational meta-skills from computer science and statistics such as
+structures; control/flow; functions; version control/documentation;
+classes and methods; apply/parallel; debugging and creating packages.
+</li>
+<li>
+<strong>Causal inference</strong> (2018)<br>
+<p style="padding-left: 20px;">
+Taught by Julia Park.<br> This coursed aimed to introduce theoretical
+frameworks for causality and the empirical tools used in the estimation
+of causal effects. This class had us learn and apply skills related to
+outcomes; causal graphs; experiments; matching; regression;
+difference-in-differences; instrumental variables; sensitivity analysis;
+regression discontinuity etc.
+</li>
+<li>
+<strong>Quantitative political methodology II</strong> (2018)<br>
+<p style="padding-left: 20px;">
+Taught by Jacob Montgomery (advisor). Primary materials: <i> Linear
+Models with R</i> (Julian Faraway). Required.<br> This is a second
+course in political methodology covering advanced methods of statistical
+analysis for political and other social scientists. Covers maximum
+likelihood estimation for various cross-sectional, time series, and
+measurement models.
+</li>
+<li>
+<strong>Maximum likelihood estimation</strong> (2019)<br>
+<p style="padding-left: 20px;">
+Taught by Julia Park.<br> This course focused on generalized linear
+model estimation. We had practical exposure to link functions for a
+number of models including multinomial and unordered models; ordered
+outcome models; duration models; count models etc.
+</li>
+<li>
+<strong>Computational social science</strong> (2019)<br>
+<p style="padding-left: 20px;">
+Taught by Christopher Lucas.<br> Primary materials: <i> Pattern
+Recognition and Machine Learning</i> (Christopher Bishop);<i> A Course
+in Machine Learning</i> (Hal Daumé); <i>The Elements of Statistical
+Learning: Data Mining, Inference, and Prediction</i> (Jerome Friedman,
+Trevor Hastie, Robert Tibshirani).<br> This coursed focused on exposing
+us to different types of data; including networks; text; audio; images;
+and videos. We began with a mechanistic approaches to supervised and
+unsupervised learning, then moved to statistical inference with
+probabilistic interpretations.
+</ul>
+</p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
 
 
@@ -313,7 +579,7 @@ St. Louis, Missouri 63130<br />
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -331,7 +597,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
