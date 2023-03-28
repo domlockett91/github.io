@@ -302,6 +302,25 @@ $(document).ready(function () {
   background-color: white;
   border: 1px solid #ddd;
 }
+.div-img{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    padding-top:10%;
+    padding-right:10%;
+}
+img{
+    transition: transform .2s;
+    width:85%;
+    height:85%;
+    margin:0 auto;
+    background-color: rgb(173, 173, 237);
+    border-radius: 10px;
+    border: 0px solid black;
+}
+img:hover{
+    transform:scale(1.5);
+}
 </style>
 <button class="collapsible">
 Projects
@@ -317,14 +336,46 @@ ANALYSIS &amp; VISUALIZTION; CONJOINT EXPERIMENT]</mark>
 </button>
 <div class="content">
 <ul>
-<p><br></p>
+<br>
+<h2 style="color:Black;font-size:18px;">
+Main Contributions
+</h2>
+<ul style="text-indent: 20px;">
+<li>
+Managed data from three experiments and provided team regular Github
+updates
+</li>
+<li>
+Visualized dozens of cross-tabulations between opinions and traits
+</li>
+<li>
+Identified administrative error which necessitated redistribution
+</li>
+<li>
+Cleansed and transformed data for linear regression
+</li>
+<li>
+Visualized data and summarized methodology and results
+</li>
+<li>
+Presented project at The Annual Conference for Political Methodology
+(displayed below)
+</li>
+</ul>
+<ul>
+<div class="div-img">
+<img src='images/poster.jpg'>
+<div>
+</ul>
+<h2 style="color:Black;font-size:18px;">
+Summary
+</h2>
 <p style="padding-left: 5px;">
 In this project, we investigated social media users’ perceptions of
 digital political ads. We measured users’ opinions on how platforms
 should design political ad UX and policies with the goal of establishing
-a baseline understanding of user opinions including the permissibly of
-political ads, microtargeting, transparency, and exemptions for news
-organizations.
+a baseline understanding of user opinions’ including the permissibly of
+political ads and microtargeting, transparency in funding.
 </p>
 <p style="padding-left: 5px;">
 The primary objective of this research was to understand what factors of
@@ -336,19 +387,30 @@ design allows us to isolate the independent effects of each component on
 perceptions of the political.
 </p>
 <p style="padding-left: 5px;">
-We designed a conjoint experiment to understand how individual
-components of composite stimuli affect human judgements and perceptions.
 We also conducted a within-between experiment asking respondents to
-evaluate real ads drawn from the Facebook Ad Library.
+evaluate real ads drawn from the Facebook Ad Library. In this portion of
+the project, we randomly assigned respondents’ to view either a
+political or non-political advertisement and asked to rate how political
+they perceived it to be. Respondents rated multiple ads (within-subject
+variation) but the exact composition of the ads was randomized for each
+respondent (between-subject variation
+</p>
+<p style="padding-left: 5px;">
+Overall, our conjoint analysis strongly supports our original research
+hypotheses showing that the source, strength, and orientation of the
+message all matter. We found that candidate ads seem to be viewed as
+inherently political, in contrast to sources such as politically active
+companies and advocacy organizations, where message strength appears to
+matter far more in order for an ad to be considered political. This
+differs from our finding in the conjoint analysis, where ads from
+companies and advocacy organizations were viewed as equally political.
 </p>
 </ul>
 </div>
-<button class="collapsible">
-<mark style="color:black;font-size:11px;background:#f5f5f5">MEASURING
+<p><button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">MEASURING
 THE EFFICACY OF IN-GROUP CORRECTIONS</mark>
-<mark style="color:gray;font-size:11px;background:#f5f5f5">[RESEARCH
-DESIGN; DATA ANALYSIS &amp; VISUALIZATION]</mark>
-</button>
+<mark style="color:gray;font-size:11px;background:#f5f5f5">[EXPERIMENTAL
+DESIGN; DATA ANALYSIS &amp; VISUALIZATION]</mark></button></p>
 <div class="content">
 <p>
 <ul>
@@ -392,24 +454,21 @@ groups when the misinformation does not relate to them.</p>
 </ul>
 </p>
 </div>
-<button class="collapsible">
-<mark style="color:black;font-size:11px;background:#f5f5f5">EXPLORING
+<p><button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">EXPLORING
 HOW NEWS PARTISANSHIP SHAPES DISCOURSE</mark>
 <mark style="color:gray;font-size:11px;background:#f5f5f5">[SCRAPING,TRANSFORMING
-&amp; ANALYZING BIG TEXT DATA]</mark>
-</button>
+&amp; ANALYZING BIG TEXT DATA]</mark></button></p>
 <div class="content">
 <p>
 <ul>
 </ul>
 </p>
 </div>
-<button class="collapsible">
-<mark style="color:black;font-size:11px;background:#f5f5f5">PREDICTING
+<p><button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">PREDICTING
 HETEROGENEOUS TREATMENT EFFECTS </mark>
 <mark style="color:gray;font-size:11px;background:#f5f5f5"> [TUNING
-HYPER-PARAMETERS TO IMPROVE DEEP LEARNING ELECTION PREDICTIONS] </mark>
-</button>
+HYPER-PARAMETERS TO IMPROVE DEEP LEARNING ELECTION PREDICTIONS]
+</mark></button></p>
 <div class="content">
 <p>
 <ul>
@@ -417,29 +476,30 @@ HYPER-PARAMETERS TO IMPROVE DEEP LEARNING ELECTION PREDICTIONS] </mark>
 </ul>
 </p>
 </div>
-<button class="collapsible">
-<mark style="color:black;font-size:11px;background:#f5f5f5">EXAMINING
+<p><button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">EXAMINING
 THE IMPACT OF FAKE NEWS ON BELIEFS </mark>
 <mark style="color:gray;font-size:11px;background:#f5f5f5">
-[EXPERIMENTAL DESIGN; CAUSAL INFERENCE;DATA ANALYSIS &amp;
-VISUALIZATION] </mark>
-</button>
+[EXPERIMENTAL DESIGN; CAUSAL INFERENCE; DATA ANALYSIS &amp;
+VISUALIZATION] </mark></button></p>
+<div class="content">
+<p>
+<ul>
+<li>
+Prepared replication file for( <a
+href="Harvard%20Dataverse">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YOGY5W</a>
+<br>
+</ul>
+</p>
+</div>
+<p><button class="collapsible"> </mark>
+<mark style="color:gray;font-size:11px;background:#f5f5f5"><mark style="color:black;font-size:11px;background:#f5f5f5"></mark>/button&gt;</p>
 <div class="content">
 <p>
 <ul>
 </ul>
 </p>
 </div>
-<button class="collapsible">
-</button>
-<div class="content">
-<p>
-<ul>
-</ul>
-</p>
-</div>
-<button class="collapsible">
-</button>
+<p><button class="collapsible"></button></p>
 <div class="content">
 <p>
 <ul>
@@ -480,6 +540,7 @@ developing knowledge can be applied to understanding political
 phenomena; identifying standards for evaluation and making good social
 scientific arguments and explanations.
 </li>
+</p>
 <li>
 <strong>Quantitative political methodology I</strong> (2018)<br>
 <p style="padding-left: 20px;">
