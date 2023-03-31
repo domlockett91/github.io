@@ -54,7 +54,7 @@ img{
     border: 0px solid black;
 }
 img:hover{
-    transform:scale(1.5);
+    transform:scale(1.63);
 }
 </style>
 
@@ -63,6 +63,34 @@ img:hover{
 <div class="content">
   <p><ul>
   
+  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">LEVERAGING TEXT DATA TO EXPLORE HOW NEWS PARTISANSHIP SHAPES DISCOURSE</mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">[NLP; ETL PIPELINE; TRANSFORMER MODELS; BIG TEXT DATA]</mark></button>
+
+<div class="content">
+  <p><ul>
+ <h2 style="color:Black;font-size:18px;"> Main Contributions</h2>
+ 
+
+<ul style="text-indent: 20px;"> 
+<li> Extracted billions of tweets and replies from Twitter API using SQL, Python, and web scraping techniques </li>
+<li> Transformed, cleansed, and normalized with Python, Pandas, and regular expressions </li>
+<li> Optimized data collection and transformation tasks using parallel processing, indexing, and caching </li>
+<li> Developed custom scripts and automations to streamline data management processes for multiple collaborators  </li>
+<li> Ensured data reliability and pipeline stability by developing logging and alerting mechanism to handle errors</li>
+</ul>
+
+ <h3 style="color:Black;font-size:18px;"> Summary</h3>
+
+<p style="padding-left: 5px;">In this project, we focused on analyzing the content of Tweets and comments on those tweets. We analyzed broad descriptive patterns in the number of tweets each news outlet makes over time through the course of our data collection, as well as the number of comments, likes, and retweets they receive. Our core analysis involved analyzing the text of the comments and tweets themselves. After scraping, the data was automatically sent to a script that handled tokenization, lemmatization, removing stop words, URLs, numbers and typos, creating n-grams, and vectorization.</p>
+
+<p style="padding-left: 5px;">Once processed, descriptive statistics, such as the average number of words in a comment by news outlet, and the average tone (as measured by sentiment dictionaries, such as LIWC) of comments by news outlet. We compared these descriptive statistics of the comments to the same descriptive statistics of the initial tweets. This allowed us to test hypotheses, such as comments being more emotionally charged than tweets from news outlets. We also examined how the initial source (e.g. news outlet vs. media personality) affected these patterns, expecting that tweets by (and comments on those tweets) media personalities will be more emotionally charged than tweets by (and comments on those tweets) general news outlets.</p> 
+
+<p style="padding-left: 5px;">The main analysis involved using measures of text similarity similar to plagiarism detection to examine the extent to which the comments on a tweet differ from the tweet itself. We are interested in measuring how the conversation through a comment thread shifts the tone and content of the message communicated initially by the news outlets. Dynamic topic modeling will also be used for this purpose.</p>
+
+  
+  </ul></p>
+</div>
+
+
   <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">IDENTIFYING WHAT CONSTITUTES A POLITICAL ADVERTISEMENT </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">
 [DATA ANALYSIS & VISUALIZTION; CONJOINT EXPERIMENT]</mark></button>
 
@@ -71,100 +99,77 @@ img:hover{
   <ul>
   <br>
  <h2 style="color:Black;font-size:18px;"> Main Contributions</h2>
-<ul style="text-indent: 20px;"> <li> Managed data from three experiments and provided team regular Github updates </li>
-<li> Visualized dozens of cross-tabulations between opinions and traits </li>
-<li> Identified administrative error which necessitated redistribution </li>
-<li> Cleansed and transformed data for linear regression </li>
-<li> Visualized data and summarized methodology and results </li>
-<li> Presented project at The Annual Conference for Political Methodology (displayed below) </li>
+<ul style="text-indent: 20px;">
+  <li>Collaborated with multidisciplinary team, providing insights and recommendations based on key findings</li>
+<li>Conducted exploratory data analysis using data visualization tools such as ggplot2 and plotly</li>
+<li> Identified experiment-breaking distribution error which necessitated reissuance </li>
+<li>Implemented data transformation techniques including variable recoding, data aggregation, and normalization</li>
+<li>Presented research findings in poster (displayed below) with visualizations, summary and Q & A</li>
+
 </ul>
 <ul>
  <div class="div-img">
    <img src='images/poster.jpg'>
  <div></ul>
-
- <h2 style="color:Black;font-size:18px;"> Summary</h2>
+        
+ <h3 style="color:Black;font-size:18px;"> Summary</h3>
 
 
 <p style="padding-left: 5px;"> In this project, we investigated  social media users' perceptions of digital political ads. We measured users' opinions on how platforms should design political ad UX and policies with the goal of establishing a baseline understanding of user opinions' including the permissibly of political ads and microtargeting, transparency in funding.</p>
 
 <p style="padding-left: 5px;"> The primary objective of this research was to understand what factors of ads (and users themselves) may contribute to their perceptions of how `political' given digital ads are. To do this, we conducted a conjoint experiment asking respondents to compare artificial Facebook ads where we alter their source, content, and political orientation. This conjoint design allows us to isolate the independent effects of each component on perceptions of the political.  </p>
 
-<p style="padding-left: 5px;"> We also conducted a within-between experiment asking respondents to evaluate real ads drawn from the Facebook Ad Library. In this portion of the project, we randomly assigned respondents' to view either a political or non-political advertisement and asked to rate how political they perceived it to be. Respondents rated multiple ads (within-subject variation) but the
-exact composition of the ads was randomized for each respondent (between-subject variation </p>
+<p style="padding-left: 5px;"> We also conducted a within-between experiment asking respondents to evaluate real ads drawn from the Facebook Ad Library. In this portion of the project, we randomly assigned respondents' to view either a political or non-political advertisement and asked to rate how political they perceived it to be. Respondents rated multiple ads (within-subject variation) but the exact composition of the ads was randomized for each respondent (between-subject variation </p>
 
 <p style="padding-left: 5px;">Overall, our conjoint analysis strongly supports our original research hypotheses showing that the source, strength, and orientation of the message all matter. We found that candidate ads seem to be viewed as inherently political, in contrast to sources such as politically active companies and advocacy organizations, where message strength appears to matter far more in order for an ad to be considered political. This differs from our finding in the conjoint analysis, where ads from companies and advocacy organizations were viewed as equally political.</p>
-
-
-  </ul>
 </div>
-
-  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">MEASURING THE EFFICACY OF IN-GROUP CORRECTIONS</mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">[EXPERIMENTAL DESIGN; DATA ANALYSIS & VISUALIZATION]</mark></button>
+<button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">MEASURING THE EFFICACY OF IN-GROUP CORRECTIONS</mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">[EXPERIMENTAL DESIGN; DATA ANALYSIS & VISUALIZATION]</mark></button>
 
 <div class="content">
   <p><ul>
+ <h2 style="color:Black;font-size:18px;"> Main Contributions</h2>
+<ul style="text-indent: 20px;">
+ <li>Defined research questions and identified target population and sample characteristics</li>
+  <li>Developed and organized clear, unbiased questionnaire</li>
+  <li>Pilot tested survey instrument and refined based on feedback</li>
+  <li>Analyzed data using descriptive and inferential statistics</li>
+  <li>Interpreted and reported results with visualizations and tables</li>
+</ul>
+
+ <h3 style="color:Black;font-size:18px;"> Summary</h3>
+
+<p style="padding-left: 5px;">In this project we explored the utility of corrections to misinformation on social media. We posit that comments from a member of one's in-group may be more effective in promoting accurate beliefs relative to members of out-groups, especially when the misinformation relates to their ethnic group. We believe individuals will rely on cues such as name and profile picture to evaluate their closeness to one's ethnic group. We suspect that in-group closeness will increase the credibility of a comment relative to a comment from a member of another group because of the sense of cohesion between members of the same ethnic group.</p>
 
 
-  
-In this project we explored the utility of corrections to misinformation on social media. We posit that comments from a member of one's in-group may be more effective in promoting accurate beliefs relative to members of out-groups, especially when the misinformation relates to their ethnic group. Corrections have been shown to be more persuasive when coming from trusted sources. There are few source cues available to individuals in posts and comments on social media. We believe individuals will rely on cues such as name and profile picture to evaluate their closeness to one's ethnic group. We suspect that in-group closeness will increase the credibility of a comment relative to a comment from a member of another group because of the sense of cohesion between members of the same ethnic group.
+<p style="padding-left: 10px;">Hypothesis 1: Corrective comments will reduce misperceptions (i.e. misperceptions will be lower in the correction conditions than in the no correction condition and control condition)</p>
 
-Hypothesis 1: Corrective comments will reduce misperceptions (i.e. misperceptions will be lower in the correction conditions than in the no correction condition and control condition).
+<p style="padding-left: 10px;">Hypothesis 2: Corrective comments from culturally relevant organizations will more effectively reduce misperceptions</p>
 
-Hypothesis 2: Corrective comments from culturally relevant organizations will more effectively reduce misperceptions.
+<p style="padding-left: 5px;">To test if corrective comments from in-groups are more effective than comments from members of other groups in promoting accurate beliefs we conducted three experiments. In these experiments, we presented respondents' with a fake Facebook posts containing misinformation targeting specific ethnic groups. We randomly sorted participants into conditions in which they either saw (1) no misinformation post and no comments; (2) misinformation post and no replies (3) misinformation post with in-group correction (4) misinforation post with out-group correction. Before and after the treatment (misinformation post) participants were asked their belief in specific misinformation. </p>
 
-To test if corrective comments from in-groups are more effective than comments from members of other groups in promoting accurate beliefs we conducted three experiments.
+<p style="padding-left: 5px;">The experiments relied on two survey waves that contained an oversampling of black (both surveys) and Latino (first survey only) respondents. Both experiments were sponsored by the Weidenbaum center and distributed by NORC. Study 1 had a total of 2030 respondents. There were ~500 black respondents and ~500 Latino respondents. Study 2 had a total of 1502 which included ~500 black respondents</p>
 
-The experiments relied on two survey waves that contained an oversampling of black (both surveys) and Latino (first survey only) respondents. Both experiments were sponsored by the Weidenbaum center and distributed by NORC.
+<p style="padding-left: 5px;">Across the two experiments we found no evidence supporting our theories. Study 1 found that providing corrections in the comments is an effective means to reducing misperceptions, however, the culturally relevant correction was not particularly effective among Latinos. Study 2 did not find results to uphold the theory that culturally relevant comments are more effective at reducing misperceptions. Among all participants in both experiments, the in-group corrections from those who were the target of misinformation was most effective, which may suggest that members of out-groups defer to other ethnic groups when the misinformation does not relate to them</p>
 
-Study 1 had a total of 2030 respondents. There were ~500 black respondents and ~500 Latino respondents.
 
-Study 2 had a total of 1502 which included ~500 black respondents.
+</div>
 
-Across the two experiments we found no evidence supporting our theories. Study 1 found that providing corrections in the comments is an effective means to reducing misperceptions, however, the culturally relevant correction was not particularly effective among Latinos. Study 2 did not find results to uphold the theory that culturally relevant comments are more effective at reducing misperceptions. Among all participants in both experiments, the in-groups were the most effective, which may suggest that members of out-groups defer to other ethnic groups when the misinformation does not relate to them.
+<button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">TUNING HYPER-PARAMETERS TO IMPROVE DEEP LEARNING ELECTION PREDICTIONS </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"> [] </mark></button>
+
+<div class="content">
+  <p><ul>
+ <h2 style="color:Black;font-size:18px;"> Main Contributions</h2>
+<ul style="text-indent: 20px;"> <li> Managed data from three experiments and provided team regular Github updates </li>
+<li> Visualized dozens of cross-tabulations between opinions and traits </li>
+<li> Identified administrative error which necessitated redistribution </li>
+<li> Cleansed and transformed data for linear regression </li>
+<li> Visualized data and summarized methodology and results </li>
+<li> Presented poster (displayed below) at The Annual Conference for Political Methodology 2022 </li>
+</ul>  
   
   </ul></p>
 </div>
 
-
-
-  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">EXPLORING HOW NEWS PARTISANSHIP SHAPES DISCOURSE</mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">[SCRAPING,TRANSFORMING & ANALYZING BIG TEXT DATA]</mark></button>
-
-<div class="content">
-  <p><ul>
-
-
-  </ul></p>
-</div>
-
-
-  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">PREDICTING HETEROGENEOUS TREATMENT EFFECTS </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"> [TUNING HYPER-PARAMETERS TO IMPROVE DEEP LEARNING ELECTION PREDICTIONS] </mark></button>
-
-<div class="content">
-  <p><ul>
-  
-  WELLL THEN SING ENSEMBLE BAYESIAN MODEL AVERAGING (EBMA) : USING 
-  
-  
-  </ul></p>
-</div>
-
-  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">EXAMINING THE IMPACT OF FAKE NEWS ON BELIEFS </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"> [EXPERIMENTAL DESIGN; CAUSAL INFERENCE; DATA ANALYSIS & VISUALIZATION] </mark></button>
-
-<div class="content">
-  <p><ul>
-<li> Prepared replication file for( [https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YOGY5W](Harvard Dataverse) <br>
-  </ul></p>
-</div>
-
-  <button class="collapsible"> </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"><mark style="color:black;font-size:11px;background:#f5f5f5"></mark>/button>
-
-<div class="content">
-  <p><ul>
-  
-  </ul></p>
-</div>
-
-  <button class="collapsible"></button>
 
 <div class="content">
   <p><ul>
