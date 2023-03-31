@@ -11,6 +11,62 @@ h1 {
   top-margin: 30px;
 }
 
+.collapsible {
+  background-color: #f5f5f5;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: #ddd;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+.div-img{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    padding-top:10%;
+    padding-right:10%;
+}
+img{
+    transition: transform .2s;
+    width:85%;
+    height:85%;
+    margin:0 auto;
+    background-color: rgb(173, 173, 237);
+    border-radius: 10px;
+    border: 0px solid black;
+}
+img:hover{
+    transform:scale(1.63);
+}
 
 /* Header 2 
 /*h2 {
