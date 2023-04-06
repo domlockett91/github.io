@@ -60,7 +60,7 @@ img:hover{
 <div class="content">
   <p><ul>
   
-  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">LEVERAGING TEXT DATA TO STUDY THE IMPACT OF NEWS SOURCE ON DISCOURSE</mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">[NLP; ETL PIPELINE; TRANSFORMER MODELS; BIG TEXT DATA]</mark></button>
+  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">USING TEXT DATA TO STUDY THE IMPACT OF NEWS SOURCE ON DISCOURSE</mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">[NLP; ETL PIPELINE; TRANSFORMER MODELS; BIG DATA]</mark></button>
 
 <div class="content">
   <p><ul>
@@ -71,19 +71,18 @@ img:hover{
 <li> Extracted billions of tweets and replies from Twitter API using SQL, Python, and web scraping techniques </li>
 <li> Transformed, cleansed, and normalized with Python, Pandas, and regular expressions </li>
 <li> Optimized data collection and transformation tasks using parallel processing, indexing, and caching </li>
-<li> Developed custom scripts and automations to streamline data management processes for multiple collaborators  </li>
+<li> Automated the data collection process to streamline data management processes for multiple collaborators  </li>
 <li> Ensured data reliability and pipeline stability by developing logging and alerting mechanism to handle errors</li>
 </ul>
 
  <h3 style="color:Black;font-size:18px;"> Summary</h3>
 
-<p style="padding-left: 5px;">In this project, we focused on analyzing the content of Tweets and comments on those tweets. We analyzed broad descriptive patterns in the number of tweets each news outlet makes over time through the course of our data collection, as well as the number of comments, likes, and retweets they receive. Our core analysis involved analyzing the text of the comments and tweets themselves. After scraping, the data was automatically sent to a script that handled tokenization, lemmatization, removing stop words, URLs, numbers and typos, creating n-grams, and vectorization.</p>
+<p style="padding-left: 5px;">The purpose of this project was to explore the ways discourse varies dependent upon the news outlet reporting. To do so, we collected Tweets shared by news organizations and their replies dating back to 2017. The data collected yielded (soon to be published) insights into variations such as sentiment and similarity. It also invited the use of  techniques such as topic modeling and interrupted times series analyses surrounding the events of January 6, 2022. We sought to understand patterns related to the emotional charge and sentiment of text and how this varied across different news outlets and topics.</p>
 
-<p style="padding-left: 5px;">Once processed, descriptive statistics, such as the average number of words in a comment by news outlet, and the average tone (as measured by sentiment dictionaries, such as LIWC) of comments by news outlet. We compared these descriptive statistics of the comments to the same descriptive statistics of the initial tweets. This allowed us to test hypotheses, such as comments being more emotionally charged than tweets from news outlets. We also examined how the initial source (e.g. news outlet vs. media personality) affected these patterns, expecting that tweets by (and comments on those tweets) media personalities will be more emotionally charged than tweets by (and comments on those tweets) general news outlets.</p> 
+<p style="padding-left: 5px;"> My major contribution to this project was the development of a reliable ETL pipeline that enabled non-methods researchers to easily load and explore the data. To do so, I first created a a Python script to parse and normalize the data. This involved pagination to fetch large volumes of data and error handling to handle API rate limits and other potential issues. The data retrieved included tweet-level information, media-level information, and context annotations. Logging was implemented to track the progress of the script and help diagnose issues that may arise during the data collection process. The main function was to allow multiple users to divide the work and run the script in parallel without repetition. </p>
 
-<p style="padding-left: 5px;">The main analysis involved using measures of text similarity similar to plagiarism detection to examine the extent to which the comments on a tweet differ from the tweet itself. We are interested in measuring how the conversation through a comment thread shifts the tone and content of the message communicated initially by the news outlets. Dynamic topic modeling will also be used for this purpose.</p>
+<p style="padding-left: 5px;"> I then developed a program that allowed users to automatically extract useful metrics from the data, store the cleansed data in a SQL database and prevent duplicate data processing. This program included preprocessing the text data with methods such as removing unnecessary characters, renaming columns, extracting links, tokenization, lemmatization and calculating various text-based metrics like average word length and total word count. Other features include an  unsupervised learning algorithm for obtaining vector representations of words and computing the subjectivity, polarity, and sentiment analysis scores for each tweet</p>
 
-  
   </ul></p>
 </div>
 
@@ -148,10 +147,10 @@ img:hover{
 
 <p style="padding-left: 5px;">Across the two experiments we found no evidence supporting our theories. Study 1 found that providing corrections in the comments is an effective means to reducing misperceptions, however, the culturally relevant correction was not particularly effective among Latinos. Study 2 did not find results to uphold the theory that culturally relevant comments are more effective at reducing misperceptions. Among all participants in both experiments, the in-group corrections from those who were the target of misinformation was most effective, which may suggest that members of out-groups defer to other ethnic groups when the misinformation does not relate to them</p>
 
-
 </div>
 
-<button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">IMPLEMNTING LARGE SCALE SURVEY EXPERIMENTS </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"> [RESEARCH DESIGN; SURVEY CREATION & IMPLEMENTATION; JOURNAL SUBMISSION] </mark></button>
+<button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">IMPLEMENTING LARGE SCALE SURVEY EXPERIMENTS </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"> [RESEARCH DESIGN; SURVEY CREATION & IMPLEMENTATION; JOURNAL SUBMISSION] </mark></button>
+
 <div class="content">
   <p><ul>
  <h2 style="color:Black;font-size:18px;"> Main Contributions</h2>
@@ -169,7 +168,7 @@ img:hover{
 2. Are evaluations of argument quality biased by individuals' pre-existing beliefs?
 3. Can biases in argument evaluation be mitigated by priming the competing goal of objectivity?</p>
 
-<p style="padding-left: 5px;">Utilizing R for designing and conducting two large-n survey experiments, the study found that individuals can distinguish between strong and weak arguments, but exhibit an argument congruency bias favoring statements aligned with their preferences. This bias persisted across strong and weak arguments, political and non-political topics, and multiple issue areas.</p>
+<p style="padding-left: 5px;">Utilizing R and our team designed and conducted two large-n survey experiments, the study found that individuals can distinguish between strong and weak arguments, but exhibit an argument congruency bias favoring statements aligned with their preferences. This bias persisted across strong and weak arguments, political and non-political topics, and multiple issue areas.</p>
 <p style="padding-left: 5px;">The project also evaluated the effectiveness of priming objectivity goals in reducing biases in argument evaluation. The first study suggested potential improvements in weak argument evaluation accuracy, while the second study showed no measurable effect.</p>
 <p style="padding-left: 5px;">This research revealed the pervasiveness of argument congruency bias and demonstrated that individuals' biases influence, but do not entirely overwhelm, their ability to accurately rate argument quality. By exploring the potential of priming objectivity as an intervention, this project contributed valuable insights into argument evaluation and strategies for reducing motivated.</p>
   
@@ -197,42 +196,32 @@ img:hover{
 
 <div class="content">
   <p><ul>
-  <li><strong>Mathematical modeling</strong> (2017)<br>
-  <p style="padding-left: 20px;">Taught by Randy Calvert. Primary materials: <i>Mathematics for Economists</i> (Pemberton and Rau). Required.<br>
-  This course covered single-variable calculus and portions of multi-variate calculus, linear algebra, and probability theory exposing us to topics including sets and relations; probability; differential calculus and optimization; difference equations; and linear algebra.</li></p>
-  
-  <li><strong>Research design</strong> (2017)<br>
- <p style="padding-left: 20px;"> Taught by Matt Gabel. Primary materials: <i> Political Science and the Logic of Representations</i> (Kevin A. Clarke, David M. Primo); <i>The logic of real arguments</i> (Alec Fisher). Required.<br>
-  This course focused on the philosophy of science and its implications for and applications in political science research. The course had three parts:  examining the nature of scientific knowledge and scientific progress; considering how scientific principles of defining, evaluating, and developing knowledge can be applied to understanding political phenomena; identifying standards for evaluation and making good social scientific arguments and explanations.</li></p>
-  
-  <li><strong>Quantitative political methodology I</strong> (2018)<br>
-  <p style="padding-left: 20px;">Taught by Guillermo Rosas. Primary materials: <i> Linear Models with R </i>(Julian Faraway). Required.<br>
-  This course explored the fundamentals of linear regression models in both scalar and matrix form. Problem sets focused on estimation; inference; specification; diagnostic tools; data management; statistical computation.</li>
-  
-  <li><strong>Theories of Individual and Collective Choice I</strong> (2018)<br>
-  <p style="padding-left: 20px;">Taught by Keith Schnakenberg. Primary materials: <i> Game Theory: An Introduction</i> (Steven Tadelis). Required.<br>
-  This class was in an introduction to rational choice theory and exposed us to spatial theory of electoral competition; cooperative game theory; and general equilibrium theory.</li>
-  
-  <li><strong>Applied statistical programming</strong> (2018)<br>
-  <p style="padding-left: 20px;">Taught by Jacob Montgomery (advisor). Primary materials: <i> R for dummies</i> (de Vries and Meys); <i>Advanced R</i> (Hadley Wickham).<br>
-  This course aimed to build our skill in programming (R) and expose us to the underpinnings of object-oriented programming. Focused on teaching foundational meta-skills from computer science and statistics such as structures; control/flow; functions; version control/documentation; classes and methods; apply/parallel; debugging and creating packages.</li>
-  
-  <li><strong>Causal inference</strong> (2018)<br>
-  <p style="padding-left: 20px;">Taught by Julia Park.<br>
-  This coursed aimed to introduce theoretical frameworks for causality and the empirical tools used in the estimation of causal effects. This class had us learn and apply skills related to outcomes; causal graphs; experiments; matching; regression; difference-in-differences; instrumental variables; sensitivity analysis; regression discontinuity etc.</li>
-  
-  <li><strong>Quantitative political methodology II</strong> (2018)<br>
+  <li><strong>Quantitative political methodology II</strong> (2019)<br>
   <p style="padding-left: 20px;">Taught by Jacob Montgomery (advisor). Primary materials: <i> Linear Models with R</i> (Julian Faraway). Required.<br>
   This is a second course in political methodology covering advanced methods of statistical analysis for political and other social scientists. Covers maximum likelihood estimation for various cross-sectional, time series, and measurement models.</li>
+  <li><strong>Computational social science</strong> (2019)<br>
+  <p style="padding-left: 20px;">Taught by Christopher Lucas.<br> Primary materials: <i> Pattern Recognition and Machine Learning</i> (Christopher Bishop);<i> A Course in Machine Learning</i>  (Hal Daumé); <i>The Elements of Statistical Learning: Data Mining, Inference, and Prediction</i>  (Jerome Friedman, Trevor Hastie, Robert Tibshirani).<br>
+This coursed focused on exposing us to different types of data; including networks; text; audio; images; and videos. We began with a mechanistic approaches to supervised and unsupervised learning, then moved to statistical inference with probabilistic interpretations.</li></p>
   
   <li><strong>Maximum likelihood estimation</strong> (2019)<br>
   <p style="padding-left: 20px;">Taught by Julia Park.<br>
   This course focused on generalized linear model estimation. We had practical exposure to link functions for a number of models including multinomial and unordered models; ordered outcome models; duration models; count models etc.</li>
   
-  <li><strong>Computational social science</strong> (2019)<br>
-  <p style="padding-left: 20px;">Taught by Christopher Lucas.<br> Primary materials: <i> Pattern Recognition and Machine Learning</i> (Christopher Bishop);<i> A Course in Machine Learning</i>  (Hal Daumé); <i>The Elements of Statistical Learning: Data Mining, Inference, and Prediction</i>  (Jerome Friedman, Trevor Hastie, Robert Tibshirani).<br>
-This coursed focused on exposing us to different types of data; including networks; text; audio; images; and videos. We began with a mechanistic approaches to supervised and unsupervised learning, then moved to statistical inference with probabilistic interpretations.</ul></p>
-</div>
+  <li><strong>Causal inference</strong> (2018)<br>
+  <p style="padding-left: 20px;">Taught by Julia Park.<br>
+  This coursed aimed to introduce theoretical frameworks for causality and the empirical tools used in the estimation of causal effects. This class had us learn and apply skills related to outcomes; causal graphs; experiments; matching; regression; difference-in-differences; instrumental variables; sensitivity analysis; regression discontinuity etc.</li>
+  
+  <li><strong>Applied statistical programming</strong> (2018)<br>
+  <p style="padding-left: 20px;">Taught by Jacob Montgomery (advisor). Primary materials: <i> R for dummies</i> (de Vries and Meys); <i>Advanced R</i> (Hadley Wickham).<br>
+  This course aimed to build our skill in programming (R) and expose us to the underpinnings of object-oriented programming. Focused on teaching foundational meta-skills from computer science and statistics such as structures; control/flow; functions; version control/documentation; classes and methods; apply/parallel; debugging and creating packages.</li>
+  
+  <li><strong>Theories of Individual and Collective Choice I</strong> (2018)<br>
+  <p style="padding-left: 20px;">Taught by Keith Schnakenberg. Primary materials: <i> Game Theory: An Introduction</i> (Steven Tadelis). Required.<br>
+  This class was in an introduction to rational choice theory and exposed us to spatial theory of electoral competition; cooperative game theory; and general equilibrium theory.</li>
+  
+  <li><strong>Quantitative political methodology I</strong> (2018)<br>
+  <p style="padding-left: 20px;">Taught by Guillermo Rosas. Primary
+
 
 
 
