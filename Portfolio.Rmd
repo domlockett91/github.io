@@ -175,20 +175,26 @@ I implemented analyses in this project in R, using libraries such as dplyr, magr
 
 <p style="padding-left: 5px;">Utilizing R and I designed and conducted two large-n survey experiments, finding that individuals can distinguish between strong and weak arguments, but exhibit a bias favoring statements aligned with their preferences. This bias persisted across strong and weak arguments, political and non-political topics, and multiple issue areas.</p>
 <p style="padding-left: 5px;">The project also evaluated the effectiveness of priming objectivity goals in reducing biases in argument evaluation. The first study suggested potential improvements in weak argument evaluation accuracy, while the second study showed no measurable effect.</p>
-<p style="padding-left: 5px;">This research revealed the pervasiveness of argument congruency bias and demonstrated that individuals' biases influence, but do not entirely overwhelm, their ability to accurately rate argument quality. By exploring the potential of priming objectivity as an intervention, this project contributed valuable insights into argument evaluation and strategies for reducing motivated.</p>
+<p style="padding-left: 5px;">This research revealed the pervasiveness of argument congruency bias and demonstrated that individuals' biases influence, but do not entirely overwhelm, their ability to accurately rate argument quality. By exploring the potential of priming objectivity as an intervention, this project contributed valuable insights into argument evaluation and strategies for reducing.
+</p>
+
   
 </div>
-<button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">TUNING HYPER-PARAMETERS TO IMPROVE DEEP LEARNING ELECTION PREDICTIONS </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"> [] </mark></button>
-
+<button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">INTRODUCTION TO PYTHON FOR PUBLIC HEALTH MASTERS' </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"> [INTRUCTIon; MACHINE LEARNING; NLP; OOP; DATA VISUALIZATION] </mark></button>
 <div class="content">
   <p><ul>
  <h2 style="color:Black;font-size:18px;"> Main Contributions</h2>
-<ul style="text-indent: 20px;"> <li> d</li>
-<li> g </li>
-<li> d </li>
-<li> a </li>
-<li> s </li>
-<li> d </li>
+<ul style="text-indent: 20px;"> 
+<li>Designed and implemented a beginner-friendly curriculum, tailored for students with no prior programming experience.</li>
+<li>Fostered an engaging and collaborative learning atmosphere by utilizing GitHub Classroom, Jupyter Lab, and the univeristy's LMS.</li>
+<li>Facilitated student comprehension by providing real-world examples with publicly available data.</li>
+<li>Conducted in-class lectures, live coding sessions, and hands-on programming exercises to facilitate student learning</li>
+<li>Provided personalized feedback and support to students to enhance their comprehension and performance</li>
+<li>Developed and administered quizzes and assignments to evaluate student progress and adjust teaching strategies</li>
+
+<body>
+	<iframe src="https://nbviewer.org/github/domlockett91/github.io/blob/master/Final-Assignment.ipynb" width="700" height="300"></iframe>
+</body>
 </ul>  
   
   </ul></p>
