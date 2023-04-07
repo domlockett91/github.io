@@ -328,8 +328,8 @@ Projects
 <button class="collapsible">
 <mark style="color:black;font-size:11px;background:#f5f5f5">USING TEXT
 DATA TO STUDY THE IMPACT OF NEWS SOURCE ON DISCOURSE</mark>
-<mark style="color:gray;font-size:11px;background:#f5f5f5">[NLP; ETL
-PIPELINE; TRANSFORMER MODELS; BIG DATA]</mark>
+<mark style="color:gray;font-size:11px;background:#f5f5f5">[NLP; ETL;
+LLM; TRANSFORMER MODELS; BIG DATA]</mark>
 </button>
 <div class="content">
 <p>
@@ -373,6 +373,9 @@ the events of January 6, 2022. We sought to understand patterns related
 to the emotional charge and sentiment of text and how this varied across
 different news outlets and topics.
 </p>
+<h3 style="color:Black;font-size:18px;">
+Methods
+</h3>
 <p style="padding-left: 5px;">
 My major contribution to this project was the development of a reliable
 ETL pipeline that enabled non-methods researchers to easily load and
@@ -398,6 +401,7 @@ learning algorithm for obtaining vector representations of words and
 computing the subjectivity, polarity, and sentiment analysis scores for
 each tweet
 </p>
+<hr />
 </ul>
 </p>
 </div>
@@ -409,7 +413,6 @@ ANALYSIS &amp; VISUALIZTION; CONJOINT EXPERIMENT]</mark>
 </button>
 <div class="content">
 <ul>
-<br>
 <h2 style="color:Black;font-size:18px;">
 Main Contributions
 </h2>
@@ -456,21 +459,22 @@ The primary objective of this research was to understand what factors of
 ads (and users themselves) may contribute to their perceptions of how
 `political’ given digital ads are. To do this, we conducted a conjoint
 experiment asking respondents to compare artificial Facebook ads where
-we alter their source, content, and political orientation. This conjoint
-design allows us to isolate the independent effects of each component on
-perceptions of the political.
+we altered their source, content, and political orientation. This
+conjoint design allowed us to isolate the independent effects of each
+component on perceptions of the political.
 </p>
 <p style="padding-left: 5px;">
 We also conducted a within-between experiment asking respondents to
-evaluate real ads drawn from the Facebook Ad Library. In this portion of
-the project, we randomly assigned respondents’ to view either a
-political or non-political advertisement and asked to rate how political
-they perceived it to be. Respondents rated multiple ads (within-subject
-variation) but the exact composition of the ads was randomized for each
-respondent (between-subject variation
+evaluate real ads drawn from the Facebook Ad Library (collected by
+co-author). In this portion of the project, we randomly assigned
+respondents’ to view either a political or non-political advertisement
+and asked to rate how political they perceived it to be. Respondents
+rated multiple ads (within-subject variation) but the exact composition
+of the ads was randomized for each respondent (between-subject
+variation)
 </p>
 <p style="padding-left: 5px;">
-Overall, our conjoint analysis strongly supports our original research
+Overall, our conjoint analysis strongly supported our original research
 hypotheses showing that the source, strength, and orientation of the
 message all matter. We found that candidate ads seem to be viewed as
 inherently political, in contrast to sources such as politically active
@@ -478,6 +482,52 @@ companies and advocacy organizations, where message strength appears to
 matter far more in order for an ad to be considered political. This
 differs from our finding in the conjoint analysis, where ads from
 companies and advocacy organizations were viewed as equally political.
+</p>
+<h3 style="color:Black;font-size:18px;">
+Methods
+</h3>
+<p style="padding-left: 5px;">
+<p>I was brought into this project after the research design and
+implementation stages of the surveys had taken place and tasked with the
+responsibility of maintaining and overseeing the data for a project. I
+quickly acquired a working understanding of the mathematical principles
+and methodologies behind conjoint experiments, a less-common analytical
+approach in my field. Upon examination of the data and methods, I
+identified discrepancies in the expected number of profiles,
+subsequently informing my collaborators of the error which had
+compromised the random assignment. Consequently, the survey distributor
+rectified the parameters and redistributed the survey, ensuring the
+project’s successful progression.</p>
+I implemented analyses in this project in R, using libraries such as
+dplyr, magrittr, and tidyverse to analyze political ad data and examine
+the impact of ad orientation on political preferences. I developed an R
+script to clean and process the data in order to create relevant
+variables and handle missingness. I implemented advanced data
+manipulation techniques and reshaped the datasets to make them more
+manageable for further analysis.
+</p>
+<p style="padding-left: 5px;">
+I then conducted a comprehensive analysis on political advertisement
+data, encompassing four novel datasets. Utilizing weighted confidence
+intervals and an array of statistical techniques, I visualized the
+findings through point-range plots, effectively conveying the political
+nature of the ad content. Additionally, I carried out a follow-up study
+to further investigate the perceived political content of various
+advertisements, expanding the project’s scope and providing a more
+in-depth understanding of the relationship between ad content and
+political affiliation.
+</p>
+<p style="padding-left: 5px;">
+Across the two experiments, we found no evidence supporting our
+hypotheses. While Study 1 showed that corrective comments in the
+comments section effectively reduced misperceptions, culturally relevant
+corrections were not particularly effective among Latinos. In Study 2,
+we did not find evidence to support the hypothesis that culturally
+relevant comments are more effective in reducing misperceptions.
+Interestingly, the in-group corrections from those who were the target
+of misinformation were most effective among all participants in both
+experiments, which may suggest that members of out-groups defer to other
+ethnic groups when the misinformation does not relate to them.
 </p>
 </div>
 <button class="collapsible">
@@ -487,95 +537,55 @@ THE EFFICACY OF IN-GROUP CORRECTIONS</mark>
 DESIGN; DATA ANALYSIS &amp; VISUALIZATION]</mark>
 </button>
 <div class="content">
-<p>
-<ul>
-<h2 style="color:Black;font-size:18px;">
-Main Contributions
-</h2>
-<ul style="text-indent: 20px;">
-<li>
-Defined research questions and identified target population and sample
-characteristics
-</li>
-<li>
-Developed and organized clear, unbiased questionnaire
-</li>
-<li>
-Pilot tested survey instrument and refined based on feedback
-</li>
-<li>
-Analyzed data using descriptive and inferential statistics
-</li>
-<li>
-Interpreted and reported results with visualizations and tables
-</li>
-</ul>
 <h3 style="color:Black;font-size:18px;">
 Summary
 </h3>
 <p style="padding-left: 5px;">
-In this project we explored the utility of corrections to misinformation
-on social media. We posit that comments from a member of one’s in-group
-may be more effective in promoting accurate beliefs relative to members
-of out-groups, especially when the misinformation relates to their
-ethnic group. We believe individuals will rely on cues such as name and
-profile picture to evaluate their closeness to one’s ethnic group. We
-suspect that in-group closeness will increase the credibility of a
-comment relative to a comment from a member of another group because of
-the sense of cohesion between members of the same ethnic group.
-</p>
-<li>
-<p style="padding-left: 10px;">
-Hypothesis 1: Corrective comments will reduce misperceptions
-(i.e. misperceptions will be lower in the correction conditions than in
-the no correction condition and control condition)
-</p>
-</li>
-<li>
-<p style="padding-left: 10px;">
-Hypothesis 2: Corrective comments from culturally relevant organizations
-will more effectively reduce misperceptions
-</p>
-</li>
-<p style="padding-left: 5px;">
-To test if corrective comments from in-groups are more effective than
-comments from members of other groups in promoting accurate beliefs we
-conducted three experiments. In these experiments, we presented
-respondents’ with a fake Facebook posts containing misinformation
-targeting specific ethnic groups. We randomly sorted participants into
-conditions in which they either saw (1) no misinformation post and no
-comments; (2) misinformation post and no replies (3) misinformation post
-with in-group correction (4) misinforation post with out-group
-correction. Before and after the treatment (misinformation post)
-participants were asked their belief in specific misinformation.
+This project aimed to investigate the effectiveness of corrective
+comments on social media in reducing misinformation, specifically
+examining the role of in-group and out-group members in promoting
+accurate beliefs. We hypothesized that comments from in-group members
+would be more effective in promoting accurate beliefs than comments from
+out-group members, particularly when the misinformation relates to the
+target’s ethnic group. We also hypothesized that corrective comments
+from culturally relevant organizations would be more effective in
+reducing misperceptions.
 </p>
 <p style="padding-left: 5px;">
-The experiments relied on two survey waves that contained an
-oversampling of black (both surveys) and Latino (first survey only)
-respondents. Both experiments were sponsored by the Weidenbaum center
-and distributed by NORC. Study 1 had a total of 2030 respondents. There
-were ~500 black respondents and ~500 Latino respondents. Study 2 had a
-total of 1502 which included ~500 black respondents
+To test these hypotheses, we conducted three experiments. Participants
+were presented with fake Facebook posts containing misinformation
+targeting specific ethnic groups and were sorted into different
+conditions, including no misinformation post and no comments,
+misinformation post and no replies, misinformation post with in-group
+correction, and misinformation post with out-group correction. Before
+and after the treatment (misinformation post), participants were asked
+their belief in specific misinformation. The experiments relied on two
+survey waves that oversampled black (both surveys) and Latino (first
+survey only) respondents. Both experiments were sponsored by the
+Weidenbaum Center at Washington University in Saint Louis and
+distributed by NORC.
 </p>
+<h3 style="color:Black;font-size:18px;">
+Methods
+</h3>
 <p style="padding-left: 5px;">
-Across the two experiments we found no evidence supporting our theories.
-Study 1 found that providing corrections in the comments is an effective
-means to reducing misperceptions, however, the culturally relevant
-correction was not particularly effective among Latinos. Study 2 did not
-find results to uphold the theory that culturally relevant comments are
-more effective at reducing misperceptions. Among all participants in
-both experiments, the in-group corrections from those who were the
-target of misinformation was most effective, which may suggest that
-members of out-groups defer to other ethnic groups when the
-misinformation does not relate to them
+In this project, I used the programming language R and used several
+packages (readr, dplyr, magrittr, knitr, ggplot2, labelled, haven,
+tidyverse, OneR, texreg, and weights) to perform data analysis. To
+analyze the data, I used techniques such as weighted means, confidence
+intervals, and linear regression. After manipulating the data to create
+new variables, I used regression models to examine the impact of
+treatments (or lack thereof) on different racial and ethnic groups’
+susceptibility to misinformation. I also created tables that displayed
+estimates, standard errors, and confidence intervals for different
+treatments and racial/ethnic groups.
 </p>
 </div>
 <button class="collapsible">
 <mark style="color:black;font-size:11px;background:#f5f5f5">IMPLEMENTING
 LARGE SCALE SURVEY EXPERIMENTS </mark>
 <mark style="color:gray;font-size:11px;background:#f5f5f5"> [RESEARCH
-DESIGN; SURVEY CREATION &amp; IMPLEMENTATION; JOURNAL SUBMISSION]
-</mark>
+DESIGN; SURVEY CREATION &amp; IMPLEMENTATION; PUBLICATION] </mark>
 </button>
 <div class="content">
 <p>
@@ -619,12 +629,11 @@ competing goal of objectivity?
 </p></li>
 </ol>
 <p style="padding-left: 5px;">
-Utilizing R and our team designed and conducted two large-n survey
-experiments, the study found that individuals can distinguish between
-strong and weak arguments, but exhibit an argument congruency bias
-favoring statements aligned with their preferences. This bias persisted
-across strong and weak arguments, political and non-political topics,
-and multiple issue areas.
+Utilizing R and I designed and conducted two large-n survey experiments,
+finding that individuals can distinguish between strong and weak
+arguments, but exhibit a bias favoring statements aligned with their
+preferences. This bias persisted across strong and weak arguments,
+political and non-political topics, and multiple issue areas.
 </p>
 <p style="padding-left: 5px;">
 The project also evaluated the effectiveness of priming objectivity
