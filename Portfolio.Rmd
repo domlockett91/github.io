@@ -1,8 +1,9 @@
+<title>Portfolio</title>
 
 <style>
 .collapsible-container {
     width: 100%;
-    max-width: 900px;
+    max-width: 1900px;
     margin: 0 auto;
   }
 
@@ -12,10 +13,23 @@
       width: 90%;
     }
   }
+  .responsive-iframe-container {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 aspect ratio */
+			height: 0;
+			overflow: hidden;
+		}
+		.responsive-iframe-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 65%;
+			height: 65%;
+		}
   ul {
     list-style-type: disc;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
   }
 
@@ -26,7 +40,7 @@
   background-color: #f5f5f5;
   color: #444;
   cursor: pointer;
-  padding: 10px;
+  padding: 5px;
   width: 100%;
   border: none;
   text-align: left;
@@ -56,24 +70,25 @@
   background-color: white;
   border: 1px solid #ddd;
 }
-.div-img{
-    justify-content: center;
-    align-items: center;
-    display:flex;
-    padding-top:10%;
-    padding-right:10%;
+.image-container {
+            display: flex;
+  justify-content: center;
+  align-items: center;
+        }
+.image-zoom {
+    display: block;
+    width: 75%;
+    max-width: 100%;
+    transition: transform .1s;
 }
-img{
-    transition: transform .2s;
-    width:85%;
-    height:85%;
-    margin:0 auto;
-    background-color: rgb(173, 173, 237);
-    border-radius: 10px;
-    border: 0px solid black;
+.image-container:hover .image-zoom {
+    transform: scale(1.5);
+    cursor: crosshair;
 }
-img:hover{
-    transform:scale(1.63);
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
 
@@ -128,8 +143,8 @@ img:hover{
 
 </ul>
 <ul>
- <div class="div-img">
-   <img src='images/poster.jpg'>
+    <div class="image-container" id="imageContainer">
+   <img src='images/poster.jpg' class="image-zoom" id="imageZoom">
  <div></ul>
         
  <h3 style="color:Black;font-size:18px;"> Summary</h3>
@@ -155,9 +170,6 @@ I implemented analyses in this project in R, using libraries such as dplyr, magr
 
 
 
-
-
-
 <p style="padding-left: 5px;">Across the two experiments, we found no evidence supporting our hypotheses. While Study 1 showed that corrective comments in the comments section effectively reduced misperceptions, culturally relevant corrections were not particularly effective among Latinos. In Study 2, we did not find evidence to support the hypothesis that culturally relevant comments are more effective in reducing misperceptions. Interestingly, the in-group corrections from those who were the target of misinformation were most effective among all participants in both experiments, which may suggest that members of out-groups defer to other ethnic groups when the misinformation does not relate to them. </p>
 
 
@@ -169,7 +181,17 @@ I implemented analyses in this project in R, using libraries such as dplyr, magr
   
 <p style="padding-left: 5px;">This project aimed to investigate the effectiveness of corrective comments on social media in reducing misinformation, specifically examining the role of in-group and out-group members in promoting accurate beliefs. We hypothesized that comments from in-group members would be more effective in promoting accurate beliefs than comments from out-group members, particularly when the misinformation relates to the target's ethnic group. We also hypothesized that corrective comments from culturally relevant organizations would be more effective in reducing misperceptions.</p>
 
+<ul>
+    <div class="image-container" id="imageContainer">
+   <img src='images/misinfo.png' class="image-zoom" id="imageZoom">
+ <div></ul>
+
 <p style="padding-left: 5px;">To test these hypotheses, we conducted three experiments. Participants were presented with fake Facebook posts containing misinformation targeting specific ethnic groups and were sorted into different conditions, including no misinformation post and no comments, misinformation post and no replies, misinformation post with in-group correction, and misinformation post with out-group correction. Before and after the treatment (misinformation post), participants were asked their belief in specific misinformation. The experiments relied on two survey waves that oversampled black (both surveys) and Latino (first survey only) respondents. Both experiments were sponsored by the Weidenbaum Center at Washington University in Saint Louis and distributed by NORC.</p>
+
+<ul>
+    <div class="image-container" id="imageContainer">
+   <img src='images/misinfo3.png' class="image-zoom" id="imageZoom">
+ <div></ul>
 
  <h3 style="color:Black;font-size:18px;"> Methods</h3>
  
@@ -195,13 +217,30 @@ I implemented analyses in this project in R, using libraries such as dplyr, magr
 2. Are evaluations of argument quality biased by individuals' pre-existing beliefs?
 3. Can biases in argument evaluation be mitigated by priming the competing goal of objectivity?</p>
 
+<ul>
+    <div class="image-container" id="imageContainer">
+   <img src='images/acb1.png' class="image-zoom" id="imageZoom">
+ </div></ul>
+
 <p style="padding-left: 5px;">Utilizing R and I designed and conducted two large-n survey experiments, finding that individuals can distinguish between strong and weak arguments, but exhibit a bias favoring statements aligned with their preferences. This bias persisted across strong and weak arguments, political and non-political topics, and multiple issue areas.</p>
+
+<ul>
+    <div class="image-container" id="imageContainer">
+   <img src='images/acb2.png' class="image-zoom" id="imageZoom">
+ </div></ul>
+ 
 <p style="padding-left: 5px;">The project also evaluated the effectiveness of priming objectivity goals in reducing biases in argument evaluation. The first study suggested potential improvements in weak argument evaluation accuracy, while the second study showed no measurable effect.</p>
+
+ <ul>
+    <div class="image-container" id="imageContainer">
+   <img src='images/acb3.png' class="image-zoom" id="imageZoom">
+ </div></ul>
+
 <p style="padding-left: 5px;">This research revealed the pervasiveness of argument congruency bias and demonstrated that individuals' biases influence, but do not entirely overwhelm, their ability to accurately rate argument quality. By exploring the potential of priming objectivity as an intervention, this project contributed valuable insights into argument evaluation and strategies for reducing.
 </p>
-
-  
 </div>
+
+ 
 <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">INTRODUCTION TO PYTHON FOR PUBLIC HEALTH MASTERS' </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"> [INSTRUCTION; MACHINE LEARNING; NLP; OOP; DATA VISUALIZATION] </mark></button>
 <div class="content">
   <p><ul>
@@ -209,14 +248,22 @@ I implemented analyses in this project in R, using libraries such as dplyr, magr
 <ul > 
 <li>Designed and implemented a beginner-friendly curriculum, tailored for students with no prior programming experience.</li>
 <li>Fostered an engaging and collaborative learning atmosphere by utilizing GitHub Classroom, Jupyter Lab, and the univeristy's LMS.</li>
+
+<div class="responsive-iframe-container">
+<iframe src="https://domlockett.github.io/website/Lecture1.3_Activity0-0.slides.html#/
+" frameborder="0" allowfullscreen>></iframe>
+</div>
+
 <li>Facilitated student comprehension by providing real-world examples with publicly available data.</li>
 <li>Conducted in-class lectures, live coding sessions, and hands-on programming exercises to facilitate student learning</li>
 <li>Provided personalized feedback and support to students to enhance their comprehension and performance</li>
 <li>Developed and administered quizzes and assignments to evaluate student progress and adjust teaching strategies</li>
 
-<body>
-	<iframe src="https://nbviewer.org/github/domlockett91/github.io/blob/master/Final-Assignment.ipynb" width="700" height="300"></iframe>
-</body>
+
+
+<div class="responsive-iframe-container">
+<iframe src="https://nbviewer.org/github/domlockett91/github.io/blob/master/Final-Assignment.ipynb" frameborder="0" allowfullscreen>></iframe>
+</div>
 </ul>  
   
   </ul></p>
@@ -232,6 +279,10 @@ I implemented analyses in this project in R, using libraries such as dplyr, magr
   <li><strong>Quantitative political methodology II</strong> (2019)<br>
   <p style="padding-left: 20px;">Taught by Jacob Montgomery (advisor). Primary materials: <i> Linear Models with R</i> (Julian Faraway). Required.<br>
   This is a second course in political methodology covering advanced methods of statistical analysis for political and other social scientists. Covers maximum likelihood estimation for various cross-sectional, time series, and measurement models.</li>
+  <div class="iframe-container">
+<iframe src="methods.pdf" frameborder="0" width="40%" height="40%"></iframe>
+</div>
+  
   <li><strong>Computational social science</strong> (2019)<br>
   <p style="padding-left: 20px;">Taught by Christopher Lucas.<br> Primary materials: <i> Pattern Recognition and Machine Learning</i> (Christopher Bishop);<i> A Course in Machine Learning</i>  (Hal Daumé); <i>The Elements of Statistical Learning: Data Mining, Inference, and Prediction</i>  (Jerome Friedman, Trevor Hastie, Robert Tibshirani).<br>
 This coursed focused on exposing us to different types of data; including networks; text; audio; images; and videos. We began with a mechanistic approaches to supervised and unsupervised learning, then moved to statistical inference with probabilistic interpretations.</li></p>
@@ -253,8 +304,17 @@ This coursed focused on exposing us to different types of data; including networ
   This class was in an introduction to rational choice theory and exposed us to spatial theory of electoral competition; cooperative game theory; and general equilibrium theory.</li>
   
   <li><strong>Quantitative political methodology I</strong> (2018)<br>
-  <p style="padding-left: 20px;">Taught by Guillermo Rosas. Primary
-
+<p style="padding-left: 20px;">Taught by Guillermo Rosas. Primary materials: <i> Linear Models with R </i>(Julian Faraway). Required.<br>
+  This course explored the fundamentals of linear regression models in both scalar and matrix form. Problem sets focused on estimation; inference; specification; diagnostic tools; data management; statistical computation.</li>
+  
+  <li><strong>Mathematical modeling</strong> (2017)<br>
+  <p style="padding-left: 20px;">Taught by Randy Calvert. Primary materials: <i>Mathematics for Economists</i> (Pemberton and Rau). Required.<br>
+  This course covered single-variable calculus and portions of multi-variate calculus, linear algebra, and probability theory exposing us to topics including sets and relations; probability; differential calculus and optimization; difference equations; and linear algebra.</li></p>
+  
+  <li><strong>Research design</strong> (2017)<br>
+ <p style="padding-left: 20px;"> Taught by Matt Gabel. Primary materials: <i> Political Science and the Logic of Representations</i> (Kevin A. Clarke, David M. Primo); <i>The logic of real arguments</i> (Alec Fisher). Required.<br>
+  This course focused on the philosophy of science and its implications for and applications in political science research. The course had three parts:  examining the nature of scientific knowledge and scientific progress; considering how scientific principles of defining, evaluating, and developing knowledge can be applied to understanding political phenomena; identifying standards for evaluation and making good social scientific arguments and explanations.</li>
+  
 
 
 
@@ -273,4 +333,6 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+
 </script> 
