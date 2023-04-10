@@ -29,8 +29,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 65%;
-    height: 65%;
+    width: 75%;
+    height: 75%;
     margin: auto;
 }
   ul {
@@ -98,6 +98,9 @@
   align-items: center;
 }
 </style>
+
+
+
 
 <button class="collapsible">Projects</button>
 
@@ -311,9 +314,17 @@ This coursed focused on exposing us to different types of data; including networ
   <li><strong>Research design</strong> (2017)<br>
  <p style="padding-left: 20px;"> Taught by Matt Gabel. Primary materials: <i> Political Science and the Logic of Representations</i> (Kevin A. Clarke, David M. Primo); <i>The logic of real arguments</i> (Alec Fisher). Required.<br>
   This course focused on the philosophy of science and its implications for and applications in political science research. The course had three parts:  examining the nature of scientific knowledge and scientific progress; considering how scientific principles of defining, evaluating, and developing knowledge can be applied to understanding political phenomena; identifying standards for evaluation and making good social scientific arguments and explanations.</li>
+</ul></p>
+</div>  
+
+<button class="collapsible">Resume</button>
+<div class="content">
+  <p><ul>
   
-
-
+<div class="responsive-iframe-container">
+<iframe src="images/resume.pdf" frameborder="0" allowfullscreen>></iframe>
+</ul></p>
+</div>
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
@@ -330,6 +341,13 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+   function disableContextMenuInIframe() {
+          const iframe = document.getElementById("my-iframe");
+          iframe.contentWindow.document.addEventListener("contextmenu", (event) => {
+              event.preventDefault();
+          });
+      }
 
 
 </script> 

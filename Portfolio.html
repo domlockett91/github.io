@@ -296,8 +296,8 @@ Portfolio
     position: absolute;
     top: 0;
     left: 0;
-    width: 65%;
-    height: 65%;
+    width: 75%;
+    height: 75%;
     margin: auto;
 }
   ul {
@@ -876,6 +876,23 @@ developing knowledge can be applied to understanding political
 phenomena; identifying standards for evaluation and making good social
 scientific arguments and explanations.
 </li>
+</ul>
+</p>
+</div>
+<button class="collapsible">
+Resume
+</button>
+<div class="content">
+<p>
+<ul>
+<div class="responsive-iframe-container">
+<iframe src="images/resume.pdf" frameborder="0" allowfullscreen>
+<blockquote>
+</iframe>
+</ul>
+</p>
+</div>
+</blockquote>
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -891,6 +908,13 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+   function disableContextMenuInIframe() {
+          const iframe = document.getElementById("my-iframe");
+          iframe.contentWindow.document.addEventListener("contextmenu", (event) => {
+              event.preventDefault();
+          });
+      }
 
 
 </script>
