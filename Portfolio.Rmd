@@ -13,19 +13,26 @@
       width: 90%;
     }
   }
-  .responsive-iframe-container {
-			position: relative;
-			padding-bottom: 56.25%; /* 16:9 aspect ratio */
-			height: 0;
-			overflow: hidden;
-		}
-		.responsive-iframe-container iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 65%;
-			height: 65%;
-		}
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 65%;
+    margin: auto;
+}
   ul {
     list-style-type: disc;
     padding-left: 15px;
@@ -217,24 +224,14 @@ I implemented analyses in this project in R, using libraries such as dplyr, magr
 2. Are evaluations of argument quality biased by individuals' pre-existing beliefs?
 3. Can biases in argument evaluation be mitigated by priming the competing goal of objectivity?</p>
 
-<ul>
-    <div class="image-container" id="imageContainer">
-   <img src='images/acb1.png' class="image-zoom" id="imageZoom">
- </div></ul>
-
 <p style="padding-left: 5px;">Utilizing R and I designed and conducted two large-n survey experiments, finding that individuals can distinguish between strong and weak arguments, but exhibit a bias favoring statements aligned with their preferences. This bias persisted across strong and weak arguments, political and non-political topics, and multiple issue areas.</p>
-
-<ul>
-    <div class="image-container" id="imageContainer">
-   <img src='images/acb2.png' class="image-zoom" id="imageZoom">
- </div></ul>
+<div class="responsive-iframe-container">
+<iframe src="images/typ.pdf" frameborder="0" allowfullscreen>></iframe>
+</div>
  
 <p style="padding-left: 5px;">The project also evaluated the effectiveness of priming objectivity goals in reducing biases in argument evaluation. The first study suggested potential improvements in weak argument evaluation accuracy, while the second study showed no measurable effect.</p>
 
- <ul>
-    <div class="image-container" id="imageContainer">
-   <img src='images/acb3.png' class="image-zoom" id="imageZoom">
- </div></ul>
+
 
 <p style="padding-left: 5px;">This research revealed the pervasiveness of argument congruency bias and demonstrated that individuals' biases influence, but do not entirely overwhelm, their ability to accurately rate argument quality. By exploring the potential of priming objectivity as an intervention, this project contributed valuable insights into argument evaluation and strategies for reducing.
 </p>
