@@ -11,7 +11,7 @@
 
 
 
-<title>Portfolio.knit</title>
+<title>Portfolio</title>
 
 <script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -58,6 +58,7 @@ if (window.hljs) {
 
 
 
+<link rel="stylesheet" href="styles.css" type="text/css" />
 
 
 
@@ -260,111 +261,12 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Portfolio</h1>
 
 </div>
 
 
-<title>
-Portfolio
-</title>
-<style>
-.collapsible-container {
-    width: 100%;
-    max-width: 1900px;
-    margin: 0 auto;
-  }
-
-  /* Media query for wider screens */
-  @media screen and (min-width: 768px) {
-    .collapsible-container {
-      width: 90%;
-    }
-  }
-.responsive-iframe-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.responsive-iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 75%;
-    margin: auto;
-}
-  ul {
-    list-style-type: disc;
-    padding-left: 15px;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  li {
-    margin-bottom: 10px;
-  }
-.collapsible {
-  background-color: #f5f5f5;
-  color: #444;
-  cursor: pointer;
-  padding: 5px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 14px;
-  transition: 0.4s;
-  font-weight: bold;
-}
-
-.active, .collapsible:hover {
-  background-color: #ddd;
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: white;
-  border: 1px solid #ddd;
-}
-.image-container {
-            display: flex;
-  justify-content: center;
-  align-items: center;
-        }
-.image-zoom {
-    display: block;
-    width: 75%;
-    max-width: 100%;
-    transition: transform .1s;
-}
-.image-container:hover .image-zoom {
-    transform: scale(1.5);
-    cursor: crosshair;
-}
-.iframe-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-</style>
+<hr />
 <button class="collapsible">
 Projects
 </button>
@@ -372,9 +274,9 @@ Projects
 <p>
 <ul>
 <button class="collapsible">
-<mark style="color:black;font-size:11px;background:#f5f5f5">USING TEXT
+<mark style="color:black;font-size:11px;background:#f7f7f7">USING TEXT
 DATA TO STUDY THE IMPACT OF NEWS SOURCE ON DISCOURSE</mark>
-<mark style="color:gray;font-size:11px;background:#f5f5f5">[NLP; ETL;
+<mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7">[NLP; ETL;
 LLM; TRANSFORMER MODELS; BIG DATA]</mark>
 </button>
 <div class="content">
@@ -405,6 +307,7 @@ Ensured data reliability and pipeline stability by developing logging
 and alerting mechanism to handle errors
 </li>
 </ul>
+<hr />
 <h3 style="color:Black;font-size:18px;">
 Summary
 </h3>
@@ -419,6 +322,7 @@ the events of January 6, 2022. We sought to understand patterns related
 to the emotional charge and sentiment of text and how this varied across
 different news outlets and topics.
 </p>
+<hr />
 <h3 style="color:Black;font-size:18px;">
 Methods
 </h3>
@@ -447,14 +351,13 @@ learning algorithm for obtaining vector representations of words and
 computing the subjectivity, polarity, and sentiment analysis scores for
 each tweet
 </p>
-<hr />
 </ul>
 </p>
 </div>
 <button class="collapsible">
-<mark style="color:black;font-size:11px;background:#f5f5f5">IDENTIFYING
+<mark style="color:black;font-size:11px;background:#f7f7f7">IDENTIFYING
 WHAT CONSTITUTES A POLITICAL ADVERTISEMENT </mark>
-<mark style="color:gray;font-size:11px;background:#f5f5f5"> [DATA
+<mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7"> [DATA
 ANALYSIS &amp; VISUALIZTION; CONJOINT EXPERIMENT]</mark>
 </button>
 <div class="content">
@@ -485,6 +388,7 @@ visualizations, summary and Q &amp; A at the Annual Conference for
 Political Methodology
 </li>
 </ul>
+<hr />
 <ul>
 <div class="image-container" id="imageContainer">
 <img src='images/poster.jpg' class="image-zoom" id="imageZoom">
@@ -529,6 +433,7 @@ matter far more in order for an ad to be considered political. This
 differs from our finding in the conjoint analysis, where ads from
 companies and advocacy organizations were viewed as equally political.
 </p>
+<hr />
 <h3 style="color:Black;font-size:18px;">
 Methods
 </h3>
@@ -577,9 +482,9 @@ ethnic groups when the misinformation does not relate to them.
 </p>
 </div>
 <button class="collapsible">
-<mark style="color:black;font-size:11px;background:#f5f5f5">MEASURING
+<mark style="color:black;font-size:11px;background:#f7f7f7">MEASURING
 THE EFFICACY OF IN-GROUP CORRECTIONS</mark>
-<mark style="color:gray;font-size:11px;background:#f5f5f5">[EXPERIMENTAL
+<mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7">[EXPERIMENTAL
 DESIGN; DATA ANALYSIS &amp; VISUALIZATION]</mark>
 </button>
 <div class="content">
@@ -617,10 +522,11 @@ Weidenbaum Center at Washington University in Saint Louis and
 distributed by NORC.
 </p>
 <ul>
-<div class="image-container" id="imageContainer">
-<img src='images/misinfo3.png' class="image-zoom" id="imageZoom">
+<div class="image-container2" id="imageContainer2">
+<img src='images/misinfo3.png' class="image-zoom2" id="imageZoom2">
 <div>
 </ul>
+<hr />
 <h3 style="color:Black;font-size:18px;">
 Methods
 </h3>
@@ -638,9 +544,9 @@ treatments and racial/ethnic groups.
 </p>
 </div>
 <button class="collapsible">
-<mark style="color:black;font-size:11px;background:#f5f5f5">IMPLEMENTING
+<mark style="color:black;font-size:11px;background:#f7f7f7">IMPLEMENTING
 LARGE SCALE SURVEY EXPERIMENTS </mark>
-<mark style="color:gray;font-size:11px;background:#f5f5f5"> [RESEARCH
+<mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7"> [RESEARCH
 DESIGN; SURVEY CREATION &amp; IMPLEMENTATION; PUBLICATION] </mark>
 </button>
 <div class="content">
@@ -665,15 +571,16 @@ Secured ethics approval, upholding the highest research standards
 Conducted advanced data analysis with R packages, revealing key insights
 on argument evaluation and objectivity interventions
 </li>
+<hr />
 </ul>
 </p>
 <h3 style="color:Black;font-size:18px;">
 Summary
 </h3>
 <p style="padding-left: 5px;">
-This data science project investigated the influence of motivated
+<p>This data science project investigated the influence of motivated
 reasoning on individuals’ evaluation of logical arguments, addressing
-three key questions:
+three key questions:</p>
 <p style="padding-left: 10px;">
 <ol style="list-style-type: decimal">
 <li>Can individuals distinguish between strong (logically consistent)
@@ -704,18 +611,18 @@ suggested potential improvements in weak argument evaluation accuracy,
 while the second study showed no measurable effect.
 </p>
 <p style="padding-left: 5px;">
-This research revealed the pervasiveness of argument congruency bias and
-demonstrated that individuals’ biases influence, but do not entirely
+<p>This research revealed the pervasiveness of argument congruency bias
+and demonstrated that individuals’ biases influence, but do not entirely
 overwhelm, their ability to accurately rate argument quality. By
 exploring the potential of priming objectivity as an intervention, this
 project contributed valuable insights into argument evaluation and
-strategies for reducing.
+strategies for reducing.</p>
 </p>
 </div>
 <button class="collapsible">
-<mark style="color:black;font-size:11px;background:#f5f5f5">INTRODUCTION
+<mark style="color:black;font-size:11px;background:#f7f7f7">INTRODUCTION
 TO PYTHON FOR PUBLIC HEALTH MASTERS’ </mark>
-<mark style="color:gray;font-size:11px;background:#f5f5f5">
+<mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7">
 [INSTRUCTION; MACHINE LEARNING; NLP; OOP; DATA VISUALIZATION] </mark>
 </button>
 <div class="content">
@@ -733,6 +640,7 @@ students with no prior programming experience.
 Fostered an engaging and collaborative learning atmosphere by utilizing
 GitHub Classroom, Jupyter Lab, and the univeristy’s LMS.
 </li>
+<hr />
 <div class="responsive-iframe-container">
 <iframe src="https://domlockett.github.io/website/Lecture1.3_Activity0-0.slides.html#/
 " frameborder="0" allowfullscreen>
@@ -776,7 +684,9 @@ Methods coursework
 <p>
 <ul>
 <li>
-<strong>Quantitative political methodology II</strong> (2019)<br>
+<strong>Quantitative political methodology II</strong>
+<mark style="color:#B8C0AF;background:#f7f7f7;">
+(2023)</mark></strong><br>
 <p style="padding-left: 20px;">
 Taught by Jacob Montgomery (advisor). Primary materials: <i> Linear
 Models with R</i> (Julian Faraway). Required.<br> This is a second
@@ -790,7 +700,8 @@ measurement models.
 </iframe>
 </div>
 <li>
-<strong>Computational social science</strong> (2019)<br>
+<strong>Computational social science</strong>
+<mark style="color:#B8C0AF;background:#f7f7f7;"> (2023)</mark><br>
 <p style="padding-left: 20px;">
 Taught by Christopher Lucas.<br> Primary materials: <i> Pattern
 Recognition and Machine Learning</i> (Christopher Bishop);<i> A Course
@@ -804,7 +715,8 @@ probabilistic interpretations.
 </li>
 </p>
 <li>
-<strong>Maximum likelihood estimation</strong> (2019)<br>
+<strong>Maximum likelihood estimation</strong>
+<mark style="color:#B8C0AF;background:#f7f7f7;"> (2023)</mark><br>
 <p style="padding-left: 20px;">
 Taught by Julia Park.<br> This course focused on generalized linear
 model estimation. We had practical exposure to link functions for a
@@ -812,7 +724,8 @@ number of models including multinomial and unordered models; ordered
 outcome models; duration models; count models etc.
 </li>
 <li>
-<strong>Causal inference</strong> (2018)<br>
+<strong>Causal inference</strong>
+<mark style="color:#B8C0AF;background:#f7f7f7;"> (2022)</mark><br>
 <p style="padding-left: 20px;">
 Taught by Julia Park.<br> This coursed aimed to introduce theoretical
 frameworks for causality and the empirical tools used in the estimation
@@ -822,7 +735,8 @@ difference-in-differences; instrumental variables; sensitivity analysis;
 regression discontinuity etc.
 </li>
 <li>
-<strong>Applied statistical programming</strong> (2018)<br>
+<strong>Applied statistical programming</strong>
+<mark style="color:#B8C0AF;background:#f7f7f7;"> (2022)</mark><br>
 <p style="padding-left: 20px;">
 Taught by Jacob Montgomery (advisor). Primary materials: <i> R for
 dummies</i> (de Vries and Meys); <i>Advanced R</i> (Hadley Wickham).<br>
@@ -833,8 +747,9 @@ structures; control/flow; functions; version control/documentation;
 classes and methods; apply/parallel; debugging and creating packages.
 </li>
 <li>
-<strong>Theories of Individual and Collective Choice I</strong>
-(2018)<br>
+<strong>Theories of Individual and Collective Choice
+I</strong><mark style="color:#B8C0AF;background:#f7f7f7;">
+(2022)</mark><br>
 <p style="padding-left: 20px;">
 Taught by Keith Schnakenberg. Primary materials: <i> Game Theory: An
 Introduction</i> (Steven Tadelis). Required.<br> This class was in an
@@ -843,7 +758,8 @@ of electoral competition; cooperative game theory; and general
 equilibrium theory.
 </li>
 <li>
-<strong>Quantitative political methodology I</strong> (2018)<br>
+<strong>Quantitative political methodology I</strong>
+<mark style="color:#B8C0AF;background:#f7f7f7;"> (2022)</mark><br>
 <p style="padding-left: 20px;">
 Taught by Guillermo Rosas. Primary materials: <i> Linear Models with R
 </i>(Julian Faraway). Required.<br> This course explored the
@@ -852,7 +768,9 @@ Problem sets focused on estimation; inference; specification; diagnostic
 tools; data management; statistical computation.
 </li>
 <li>
-<strong>Mathematical modeling</strong> (2017)<br>
+<strong>Mathematical modeling</strong>
+<mark style="color:#B8C0AF;background:#f7f7f7;">
+(2021)</mark></mark><br>
 <p style="padding-left: 20px;">
 Taught by Randy Calvert. Primary materials: <i>Mathematics for
 Economists</i> (Pemberton and Rau). Required.<br> This course covered
@@ -863,7 +781,8 @@ difference equations; and linear algebra.
 </li>
 </p>
 <li>
-<strong>Research design</strong> (2017)<br>
+<strong>Research design</strong>
+<mark style="color:#B8C0AF;background:#f7f7f7;"> (2021)</mark><br>
 <p style="padding-left: 20px;">
 Taught by Matt Gabel. Primary materials: <i> Political Science and the
 Logic of Representations</i> (Kevin A. Clarke, David M. Primo); <i>The
@@ -880,19 +799,17 @@ scientific arguments and explanations.
 </p>
 </div>
 <button class="collapsible">
-Resume
+Résumé
 </button>
 <div class="content">
 <p>
 <ul>
 <div class="responsive-iframe-container">
-<iframe src="images/resume.pdf" frameborder="0" allowfullscreen>
-<blockquote>
+<iframe src="images/Lockett_resume23.pdf" frameborder="0" allowfullscreen>
 </iframe>
 </ul>
 </p>
 </div>
-</blockquote>
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;

@@ -1,113 +1,19 @@
-<title>Portfolio</title>
-
-<style>
-.collapsible-container {
-    width: 100%;
-    max-width: 1900px;
-    margin: 0 auto;
-  }
-
-  /* Media query for wider screens */
-  @media screen and (min-width: 768px) {
-    .collapsible-container {
-      width: 90%;
-    }
-  }
-.responsive-iframe-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.responsive-iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 75%;
-    margin: auto;
-}
-  ul {
-    list-style-type: disc;
-    padding-left: 15px;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  li {
-    margin-bottom: 10px;
-  }
-.collapsible {
-  background-color: #f5f5f5;
-  color: #444;
-  cursor: pointer;
-  padding: 5px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 14px;
-  transition: 0.4s;
-  font-weight: bold;
-}
-
-.active, .collapsible:hover {
-  background-color: #ddd;
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: white;
-  border: 1px solid #ddd;
-}
-.image-container {
-            display: flex;
-  justify-content: center;
-  align-items: center;
-        }
-.image-zoom {
-    display: block;
-    width: 75%;
-    max-width: 100%;
-    transition: transform .1s;
-}
-.image-container:hover .image-zoom {
-    transform: scale(1.5);
-    cursor: crosshair;
-}
-.iframe-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-</style>
-
-
+---
+title: "Portfolio"
+output:
+  html_document:
+    css: styles.css
+---
+___
 
 
 <button class="collapsible">Projects</button>
 
+
 <div class="content">
   <p><ul>
   
-  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">USING TEXT DATA TO STUDY THE IMPACT OF NEWS SOURCE ON DISCOURSE</mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">[NLP; ETL; LLM; TRANSFORMER MODELS; BIG DATA]</mark></button>
+  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f7f7f7">USING TEXT DATA TO STUDY THE IMPACT OF NEWS SOURCE ON DISCOURSE</mark> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7">[NLP; ETL; LLM; TRANSFORMER MODELS; BIG DATA]</mark></button>
 
 <div class="content">
   <p><ul>
@@ -121,23 +27,23 @@
 <li> Automated the data collection process to streamline data management processes for multiple collaborators  </li>
 <li> Ensured data reliability and pipeline stability by developing logging and alerting mechanism to handle errors</li>
 </ul>
-
+___
  <h3 style="color:Black;font-size:18px;"> Summary</h3>
 
 <p style="padding-left: 5px;">The purpose of this project was to explore the ways discourse varies dependent upon the news outlet reporting. To do so, we collected Tweets shared by news organizations and their replies dating back to 2017. The data collected yielded (soon to be published) insights into variations such as sentiment and similarity. It also invited the use of  techniques such as topic modeling and interrupted times series analyses surrounding the events of January 6, 2022. We sought to understand patterns related to the emotional charge and sentiment of text and how this varied across different news outlets and topics.</p>
-
+___
  <h3 style="color:Black;font-size:18px;"> Methods</h3>
 
 <p style="padding-left: 5px;"> My major contribution to this project was the development of a reliable ETL pipeline that enabled non-methods researchers to easily load and explore the data. To do so, I first created a a Python script to parse and normalize the data. This involved pagination to fetch large volumes of data and error handling to handle API rate limits and other potential issues. The data retrieved included tweet-level information, media-level information, and context annotations. Logging was implemented to track the progress of the script and help diagnose issues that may arise during the data collection process. The main function was to allow multiple users to divide the work and run the script in parallel without repetition. </p>
 
 <p style="padding-left: 5px;"> I then developed a program that allowed users to automatically extract useful metrics from the data, store the cleansed data in a SQL database and prevent duplicate data processing. This program included preprocessing the text data with methods such as removing unnecessary characters, renaming columns, extracting links, tokenization, lemmatization and calculating various text-based metrics like average word length and total word count. Other features include an  unsupervised learning algorithm for obtaining vector representations of words and computing the subjectivity, polarity, and sentiment analysis scores for each tweet</p>
 
----
+
   </ul></p>
 </div>
 
 
-  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">IDENTIFYING WHAT CONSTITUTES A POLITICAL ADVERTISEMENT </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">
+  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f7f7f7">IDENTIFYING WHAT CONSTITUTES A POLITICAL ADVERTISEMENT </mark> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7">
 [DATA ANALYSIS & VISUALIZTION; CONJOINT EXPERIMENT]</mark></button>
 
 
@@ -156,7 +62,8 @@
     <div class="image-container" id="imageContainer">
    <img src='images/poster.jpg' class="image-zoom" id="imageZoom">
  <div></ul>
-        
+___
+
  <h3 style="color:Black;font-size:18px;"> Summary</h3>
 
 
@@ -167,24 +74,20 @@
 <p style="padding-left: 5px;"> We also conducted a within-between experiment asking respondents to evaluate real ads drawn from the Facebook Ad Library (collected by co-author). In this portion of the project, we randomly assigned respondents' to view either a political or non-political advertisement and asked to rate how political they perceived it to be. Respondents rated multiple ads (within-subject variation) but the exact composition of the ads was randomized for each respondent (between-subject variation) </p>
 
 <p style="padding-left: 5px;">Overall, our conjoint analysis strongly supported our original research hypotheses showing that the source, strength, and orientation of the message all matter. We found that candidate ads seem to be viewed as inherently political, in contrast to sources such as politically active companies and advocacy organizations, where message strength appears to matter far more in order for an ad to be considered political. This differs from our finding in the conjoint analysis, where ads from companies and advocacy organizations were viewed as equally political.</p>
-
+___
  <h3 style="color:Black;font-size:18px;"> Methods</h3>
  
  <p style="padding-left: 5px;"> I was brought into this project after the research design and implementation stages of the surveys had taken place and tasked with the responsibility of maintaining and overseeing the data for a project. I quickly acquired a working understanding of the mathematical principles and methodologies behind conjoint experiments, a less-common analytical approach in my field. Upon examination of the data and methods, I identified discrepancies in the expected number of profiles, subsequently informing my collaborators of the error which had compromised the random assignment. Consequently, the survey distributor rectified the parameters and redistributed the survey, ensuring the project's successful progression. 
 
 I implemented analyses in this project in R, using libraries such as dplyr, magrittr, and tidyverse to analyze political ad data and examine the impact of ad orientation on political preferences. I developed an R script to clean and process the data in order to create relevant variables and handle missingness. I implemented advanced data manipulation techniques and reshaped the datasets to make them more manageable for further analysis.</p>
 
-
- 
  <p style="padding-left: 5px;"> I then conducted a comprehensive analysis on political advertisement data, encompassing four novel datasets. Utilizing weighted confidence intervals and an array of statistical techniques, I visualized the findings through point-range plots, effectively conveying the political nature of the ad content. Additionally, I carried out a follow-up study to further investigate the perceived political content of various advertisements, expanding the project's scope and providing a more in-depth understanding of the relationship between ad content and political affiliation.</p>
-
-
 
 <p style="padding-left: 5px;">Across the two experiments, we found no evidence supporting our hypotheses. While Study 1 showed that corrective comments in the comments section effectively reduced misperceptions, culturally relevant corrections were not particularly effective among Latinos. In Study 2, we did not find evidence to support the hypothesis that culturally relevant comments are more effective in reducing misperceptions. Interestingly, the in-group corrections from those who were the target of misinformation were most effective among all participants in both experiments, which may suggest that members of out-groups defer to other ethnic groups when the misinformation does not relate to them. </p>
 
 
 </div>
-<button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">MEASURING THE EFFICACY OF IN-GROUP CORRECTIONS</mark> <mark style="color:gray;font-size:11px;background:#f5f5f5">[EXPERIMENTAL DESIGN; DATA ANALYSIS & VISUALIZATION]</mark></button>
+<button class="collapsible"><mark style="color:black;font-size:11px;background:#f7f7f7">MEASURING THE EFFICACY OF IN-GROUP CORRECTIONS</mark> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7">[EXPERIMENTAL DESIGN; DATA ANALYSIS & VISUALIZATION]</mark></button>
  <div class="content">
   <h3 style="color:Black;font-size:18px;"> Summary</h3>
 
@@ -199,16 +102,16 @@ I implemented analyses in this project in R, using libraries such as dplyr, magr
 <p style="padding-left: 5px;">To test these hypotheses, we conducted three experiments. Participants were presented with fake Facebook posts containing misinformation targeting specific ethnic groups and were sorted into different conditions, including no misinformation post and no comments, misinformation post and no replies, misinformation post with in-group correction, and misinformation post with out-group correction. Before and after the treatment (misinformation post), participants were asked their belief in specific misinformation. The experiments relied on two survey waves that oversampled black (both surveys) and Latino (first survey only) respondents. Both experiments were sponsored by the Weidenbaum Center at Washington University in Saint Louis and distributed by NORC.</p>
 
 <ul>
-    <div class="image-container" id="imageContainer">
-   <img src='images/misinfo3.png' class="image-zoom" id="imageZoom">
+    <div class="image-container2" id="imageContainer2">
+   <img src='images/misinfo3.png' class="image-zoom2" id="imageZoom2">
  <div></ul>
-
+___
  <h3 style="color:Black;font-size:18px;"> Methods</h3>
  
 <p style="padding-left: 5px;">In this project, I used the programming language R and used several packages (readr, dplyr, magrittr, knitr, ggplot2, labelled, haven, tidyverse, OneR, texreg, and weights) to perform data analysis. To analyze the data, I used techniques such as weighted means, confidence intervals, and linear regression. After manipulating the data to create new variables, I used regression models to examine the impact of treatments (or lack thereof) on different racial and ethnic groups' susceptibility to misinformation. I also created tables that displayed estimates, standard errors, and confidence intervals for different treatments and racial/ethnic groups. </p>
 
 </div>
-<button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">IMPLEMENTING LARGE SCALE SURVEY EXPERIMENTS </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"> [RESEARCH DESIGN; SURVEY CREATION & IMPLEMENTATION; PUBLICATION] </mark></button>
+<button class="collapsible"><mark style="color:black;font-size:11px;background:#f7f7f7">IMPLEMENTING LARGE SCALE SURVEY EXPERIMENTS </mark> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7"> [RESEARCH DESIGN; SURVEY CREATION & IMPLEMENTATION; PUBLICATION] </mark></button>
 
 <div class="content">
   <p><ul>
@@ -218,36 +121,39 @@ I implemented analyses in this project in R, using libraries such as dplyr, magr
   <li>Designed 2 large-n survey experiments generating a robust and insightful data set</li>
   <li>Secured ethics approval, upholding the highest research standards</li>
   <li>Conducted advanced data analysis with R packages, revealing key insights on argument evaluation and objectivity interventions</li>
+___
   </ul></p>
   
  <h3 style="color:Black;font-size:18px;"> Summary</h3>
 
 <p style="padding-left: 5px;">This data science project investigated the influence of motivated reasoning on individuals' evaluation of logical arguments, addressing three key questions:
+
 <p style="padding-left: 10px;">1. Can individuals distinguish between strong (logically consistent) and weak (logically flawed) arguments?
 2. Are evaluations of argument quality biased by individuals' pre-existing beliefs?
 3. Can biases in argument evaluation be mitigated by priming the competing goal of objectivity?</p>
 
 <p style="padding-left: 5px;">Utilizing R and I designed and conducted two large-n survey experiments, finding that individuals can distinguish between strong and weak arguments, but exhibit a bias favoring statements aligned with their preferences. This bias persisted across strong and weak arguments, political and non-political topics, and multiple issue areas.</p>
+
 <div class="responsive-iframe-container">
 <iframe src="images/typ.pdf" frameborder="0" allowfullscreen>></iframe>
 </div>
  
 <p style="padding-left: 5px;">The project also evaluated the effectiveness of priming objectivity goals in reducing biases in argument evaluation. The first study suggested potential improvements in weak argument evaluation accuracy, while the second study showed no measurable effect.</p>
 
-
-
 <p style="padding-left: 5px;">This research revealed the pervasiveness of argument congruency bias and demonstrated that individuals' biases influence, but do not entirely overwhelm, their ability to accurately rate argument quality. By exploring the potential of priming objectivity as an intervention, this project contributed valuable insights into argument evaluation and strategies for reducing.
+
 </p>
 </div>
 
  
-<button class="collapsible"><mark style="color:black;font-size:11px;background:#f5f5f5">INTRODUCTION TO PYTHON FOR PUBLIC HEALTH MASTERS' </mark> <mark style="color:gray;font-size:11px;background:#f5f5f5"> [INSTRUCTION; MACHINE LEARNING; NLP; OOP; DATA VISUALIZATION] </mark></button>
+<button class="collapsible"><mark style="color:black;font-size:11px;background:#f7f7f7">INTRODUCTION TO PYTHON FOR PUBLIC HEALTH MASTERS' </mark> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7"> [INSTRUCTION; MACHINE LEARNING; NLP; OOP; DATA VISUALIZATION] </mark></button>
 <div class="content">
   <p><ul>
  <h2 style="color:Black;font-size:16px;"> Main Contributions</h2>
 <ul > 
 <li>Designed and implemented a beginner-friendly curriculum, tailored for students with no prior programming experience.</li>
 <li>Fostered an engaging and collaborative learning atmosphere by utilizing GitHub Classroom, Jupyter Lab, and the univeristy's LMS.</li>
+___
 
 <div class="responsive-iframe-container">
 <iframe src="https://domlockett.github.io/website/Lecture1.3_Activity0-0.slides.html#/
@@ -276,53 +182,53 @@ I implemented analyses in this project in R, using libraries such as dplyr, magr
 
 <div class="content">
   <p><ul>
-  <li><strong>Quantitative political methodology II</strong> (2019)<br>
+  <li><strong>Quantitative political methodology II</strong> <mark style="color:#B8C0AF;background:#f7f7f7;"> (2023)</mark></strong><br>
   <p style="padding-left: 20px;">Taught by Jacob Montgomery (advisor). Primary materials: <i> Linear Models with R</i> (Julian Faraway). Required.<br>
   This is a second course in political methodology covering advanced methods of statistical analysis for political and other social scientists. Covers maximum likelihood estimation for various cross-sectional, time series, and measurement models.</li>
   <div class="iframe-container">
 <iframe src="methods.pdf" frameborder="0" width="40%" height="40%"></iframe>
 </div>
   
-  <li><strong>Computational social science</strong> (2019)<br>
+  <li><strong>Computational social science</strong> <mark style="color:#B8C0AF;background:#f7f7f7;"> (2023)</mark><br>
   <p style="padding-left: 20px;">Taught by Christopher Lucas.<br> Primary materials: <i> Pattern Recognition and Machine Learning</i> (Christopher Bishop);<i> A Course in Machine Learning</i>  (Hal Daumé); <i>The Elements of Statistical Learning: Data Mining, Inference, and Prediction</i>  (Jerome Friedman, Trevor Hastie, Robert Tibshirani).<br>
 This coursed focused on exposing us to different types of data; including networks; text; audio; images; and videos. We began with a mechanistic approaches to supervised and unsupervised learning, then moved to statistical inference with probabilistic interpretations.</li></p>
   
-  <li><strong>Maximum likelihood estimation</strong> (2019)<br>
+  <li><strong>Maximum likelihood estimation</strong> <mark style="color:#B8C0AF;background:#f7f7f7;"> (2023)</mark><br>
   <p style="padding-left: 20px;">Taught by Julia Park.<br>
   This course focused on generalized linear model estimation. We had practical exposure to link functions for a number of models including multinomial and unordered models; ordered outcome models; duration models; count models etc.</li>
   
-  <li><strong>Causal inference</strong> (2018)<br>
+  <li><strong>Causal inference</strong> <mark style="color:#B8C0AF;background:#f7f7f7;">  (2022)</mark><br>
   <p style="padding-left: 20px;">Taught by Julia Park.<br>
   This coursed aimed to introduce theoretical frameworks for causality and the empirical tools used in the estimation of causal effects. This class had us learn and apply skills related to outcomes; causal graphs; experiments; matching; regression; difference-in-differences; instrumental variables; sensitivity analysis; regression discontinuity etc.</li>
   
-  <li><strong>Applied statistical programming</strong> (2018)<br>
+  <li><strong>Applied statistical programming</strong> <mark style="color:#B8C0AF;background:#f7f7f7;"> (2022)</mark><br>
   <p style="padding-left: 20px;">Taught by Jacob Montgomery (advisor). Primary materials: <i> R for dummies</i> (de Vries and Meys); <i>Advanced R</i> (Hadley Wickham).<br>
   This course aimed to build our skill in programming (R) and expose us to the underpinnings of object-oriented programming. Focused on teaching foundational meta-skills from computer science and statistics such as structures; control/flow; functions; version control/documentation; classes and methods; apply/parallel; debugging and creating packages.</li>
   
-  <li><strong>Theories of Individual and Collective Choice I</strong> (2018)<br>
+  <li><strong>Theories of Individual and Collective Choice I</strong><mark style="color:#B8C0AF;background:#f7f7f7;">  (2022)</mark><br>
   <p style="padding-left: 20px;">Taught by Keith Schnakenberg. Primary materials: <i> Game Theory: An Introduction</i> (Steven Tadelis). Required.<br>
   This class was in an introduction to rational choice theory and exposed us to spatial theory of electoral competition; cooperative game theory; and general equilibrium theory.</li>
   
-  <li><strong>Quantitative political methodology I</strong> (2018)<br>
+  <li><strong>Quantitative political methodology I</strong> <mark style="color:#B8C0AF;background:#f7f7f7;"> (2022)</mark><br>
 <p style="padding-left: 20px;">Taught by Guillermo Rosas. Primary materials: <i> Linear Models with R </i>(Julian Faraway). Required.<br>
   This course explored the fundamentals of linear regression models in both scalar and matrix form. Problem sets focused on estimation; inference; specification; diagnostic tools; data management; statistical computation.</li>
   
-  <li><strong>Mathematical modeling</strong> (2017)<br>
+  <li><strong>Mathematical modeling</strong> <mark style="color:#B8C0AF;background:#f7f7f7;"> (2021)</mark></mark><br>
   <p style="padding-left: 20px;">Taught by Randy Calvert. Primary materials: <i>Mathematics for Economists</i> (Pemberton and Rau). Required.<br>
   This course covered single-variable calculus and portions of multi-variate calculus, linear algebra, and probability theory exposing us to topics including sets and relations; probability; differential calculus and optimization; difference equations; and linear algebra.</li></p>
   
-  <li><strong>Research design</strong> (2017)<br>
+  <li><strong>Research design</strong> <mark style="color:#B8C0AF;background:#f7f7f7;"> (2021)</mark><br>
  <p style="padding-left: 20px;"> Taught by Matt Gabel. Primary materials: <i> Political Science and the Logic of Representations</i> (Kevin A. Clarke, David M. Primo); <i>The logic of real arguments</i> (Alec Fisher). Required.<br>
   This course focused on the philosophy of science and its implications for and applications in political science research. The course had three parts:  examining the nature of scientific knowledge and scientific progress; considering how scientific principles of defining, evaluating, and developing knowledge can be applied to understanding political phenomena; identifying standards for evaluation and making good social scientific arguments and explanations.</li>
 </ul></p>
 </div>  
 
-<button class="collapsible">Resume</button>
+<button class="collapsible">Résumé</button>
 <div class="content">
   <p><ul>
   
 <div class="responsive-iframe-container">
-<iframe src="images/resume.pdf" frameborder="0" allowfullscreen>></iframe>
+<iframe src="images/Lockett_resume23.pdf" frameborder="0" allowfullscreen></iframe>
 </ul></p>
 </div>
 
