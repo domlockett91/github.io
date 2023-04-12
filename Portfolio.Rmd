@@ -13,7 +13,7 @@ ___
 <div class="content">
   <p><ul>
   
-  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f7f7f7">USING TEXT DATA TO STUDY THE IMPACT OF NEWS SOURCE ON DISCOURSE</mark> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7">[NLP; ETL; LLM; TRANSFORMER MODELS; BIG DATA]</mark></button>
+  <button class="collapsible"><p2>USING TEXT DATA TO STUDY THE IMPACT OF NEWS SOURCE ON DISCOURSE </p2><mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7">[NLP; ETL; LLM; TRANSFORMER MODELS; BIG DATA]</mark></button>
 
 <div class="content">
   <p><ul>
@@ -43,7 +43,7 @@ ___
 </div>
 
 
-  <button class="collapsible"><mark style="color:black;font-size:11px;background:#f7f7f7">IDENTIFYING WHAT CONSTITUTES A POLITICAL ADVERTISEMENT </mark> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7">
+  <button class="collapsible"><p2>IDENTIFYING WHAT CONSTITUTES A POLITICAL ADVERTISEMENT </p2> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7">
 [DATA ANALYSIS & VISUALIZTION; CONJOINT EXPERIMENT]</mark></button>
 
 
@@ -87,7 +87,7 @@ I implemented analyses in this project in R, using libraries such as dplyr, magr
 
 
 </div>
-<button class="collapsible"><mark style="color:black;font-size:11px;background:#f7f7f7">MEASURING THE EFFICACY OF IN-GROUP CORRECTIONS</mark> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7">[EXPERIMENTAL DESIGN; DATA ANALYSIS & VISUALIZATION]</mark></button>
+<button class="collapsible"><p2>MEASURING THE EFFICACY OF IN-GROUP CORRECTIONS</p2> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7">[EXPERIMENTAL DESIGN; DATA ANALYSIS & VISUALIZATION]</mark></button>
  <div class="content">
   <h3 style="color:Black;font-size:18px;"> Summary</h3>
 
@@ -111,7 +111,7 @@ ___
 <p style="padding-left: 5px;">In this project, I used the programming language R and used several packages (readr, dplyr, magrittr, knitr, ggplot2, labelled, haven, tidyverse, OneR, texreg, and weights) to perform data analysis. To analyze the data, I used techniques such as weighted means, confidence intervals, and linear regression. After manipulating the data to create new variables, I used regression models to examine the impact of treatments (or lack thereof) on different racial and ethnic groups' susceptibility to misinformation. I also created tables that displayed estimates, standard errors, and confidence intervals for different treatments and racial/ethnic groups. </p>
 
 </div>
-<button class="collapsible"><mark style="color:black;font-size:11px;background:#f7f7f7">IMPLEMENTING LARGE SCALE SURVEY EXPERIMENTS </mark> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7"> [RESEARCH DESIGN; SURVEY CREATION & IMPLEMENTATION; PUBLICATION] </mark></button>
+<button class="collapsible"><p2>IMPLEMENTING LARGE SCALE SURVEY EXPERIMENTS </p2> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7"> [RESEARCH DESIGN; SURVEY CREATION & IMPLEMENTATION; PUBLICATION] </mark></button>
 
 <div class="content">
   <p><ul>
@@ -146,7 +146,7 @@ ___
 </div>
 
  
-<button class="collapsible"><mark style="color:black;font-size:11px;background:#f7f7f7">INTRODUCTION TO PYTHON FOR PUBLIC HEALTH MASTERS' </mark> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7"> [INSTRUCTION; MACHINE LEARNING; NLP; OOP; DATA VISUALIZATION] </mark></button>
+<button class="collapsible"><p2>INTRODUCTION TO PYTHON FOR PUBLIC HEALTH MASTERS' </p2> <mark style="color:#B8C0AF;font-size:11px;background:#f7f7f7"> [INSTRUCTION; MACHINE LEARNING; NLP; OOP; DATA VISUALIZATION] </mark></button>
 <div class="content">
   <p><ul>
  <h2 style="color:Black;font-size:16px;"> Main Contributions</h2>

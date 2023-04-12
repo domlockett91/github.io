@@ -55,12 +55,12 @@
 }
 
 .active, .collapsible:hover {
-  background-color: #ddd;
+  background-color: rgba(95, 69, 84, 0.3);
 }
 
 .collapsible:after {
   content: '\002B';
-  color: #f7f7f7;
+  color:rgba(95, 69, 84, 0.3);;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -128,8 +128,8 @@ align-items: center;
 }
 hr {
   border-color: rgba(95, 69, 84, 0.2);
-  width: 77%;
-  margin: 0; 
+  width: 87%;
+  margin: 5px; 
   margin-top: 20px;
   margin-bottom: 20px;
 
@@ -176,4 +176,16 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
   border-color: #5F4554;
+}
+
+p2 {
+  color:black;
+  font-size: 11px;
+
+}
+
+p3 {
+  color:#B8C0AF;
+  font-size: 11px;
+
 }
