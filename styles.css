@@ -1,15 +1,191 @@
-.collapsible-container {
-    width: 100%;
-    max-width: 1900px;
-    margin: 0 auto;
-  }
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Media query for wider screens */
-  @media screen and (min-width: 768px) {
-    .collapsible-container {
-      width: 90%;
-    }
-  }
+/* Typography */
+
+hr {
+  border-color: rgba(95, 69, 84, 0.2);
+  width: 87%;
+  margin: 5px; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+
+}
+
+body {
+  background-color: ##f7f7f7;
+  font-family: Arial, sans-serif;
+  color: #30362F;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #5F4554;
+  margin-bottom: 1.5rem;
+}
+
+
+a {
+  color:#B8C0AF ;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5F4554;
+}
+
+.main-text{
+  color: #30362F;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+p2 {
+  color:black;
+  font-size: 11px;
+
+}
+
+p3 {
+  color:#8E936D;
+  font-size: 11px;
+
+}
+
+
+ul {
+  list-style-type: disc;
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+
+/* Form Elements and Input Styles */
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  background-color: #30362F;
+  color: #30362F;
+  border: 1px solid #30362F;
+  padding: 5px 10px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+  border-color: #5F4554;
+}
+
+
+
+/* Containers and Layout */
+
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  color:#30362F;
+  background-color:#f7f7f7;
+  border: 1px solid #ddd;
+}
+
+
+
+.container {
+  margin-right: 50px;
+}
+
+/* Navigation */
+
+
+.navbar {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar li {
+  margin-right: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Buttons */
+
+
+button {
+  background-color: #30362F;
+  color: #f7f7f7;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5F4554;
+}
+
+
+
+
+/* Images */
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container {
+            display: flex;
+  justify-content: center;
+  align-items: center;
+        }
+.image-container2 {
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.image-zoom {
+    display: block;
+    width: 75%;
+    max-width: 100%;
+    transition: transform .1s;
+}
+
+.image-zoom2 {
+    display: block;
+    width: 25%;
+    max-width: 100%;
+    transition: transform .1s;
+}
+.image-container:hover .image-zoom {
+    transform: scale(1.5);
+    cursor: crosshair;
+}
+.image-container2:hover .image-zoom2 {
+    transform: scale(1.5);
+    cursor: crosshair;
+}
+
+/* iFrames */
 .responsive-iframe-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
@@ -30,15 +206,46 @@
     height: 75%;
     margin: auto;
 }
-  ul {
-    list-style-type: disc;
-    padding-left: 15px;
-    font-size: 14px;
-    line-height: 1.5;
-  }
+/* Media Queries */
 
-  li {
-    margin-bottom: 10px;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Your CSS rules for extra small devices */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Your CSS rules for small devices */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Your CSS rules for medium devices */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Your CSS rules for large devices */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Your CSS rules for extra large devices */
+}
+
+
+/* Miscellaneous and other elements */
+.custom-class {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.25rem;
+}
+
+.collapsible-container {
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
   }
 .collapsible {
   background-color: #f7f7f7;
@@ -82,110 +289,4 @@
   color:#30362F;
   background-color:#f7f7f7;
   border: 1px solid #ddd;
-}
-.image-container {
-            display: flex;
-  justify-content: center;
-  align-items: center;
-        }
-.image-container2 {
-    display: flex;
-justify-content: center;
-align-items: center;
-}
-.image-zoom {
-    display: block;
-    width: 75%;
-    max-width: 100%;
-    transition: transform .1s;
-}
-
-.image-zoom2 {
-    display: block;
-    width: 25%;
-    max-width: 100%;
-    transition: transform .1s;
-}
-.image-container:hover .image-zoom {
-    transform: scale(1.5);
-    cursor: crosshair;
-}
-.image-container2:hover .image-zoom2 {
-    transform: scale(1.5);
-    cursor: crosshair;
-}
-.iframe-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-text{
-  color: #30362F;
-}
-.container {
-  margin-right: 50px;
-}
-hr {
-  border-color: rgba(95, 69, 84, 0.2);
-  width: 87%;
-  margin: 5px; 
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-
-}
-
-body {
-  background-color: ##f7f7f7;
-  font-family: Arial, sans-serif;
-  color: #30362F;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #5F4554;
-}
-
-a {
-  color:#B8C0AF ;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #5F4554;
-}
-
-button {
-  background-color: #30362F;
-  color: #f7f7f7;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #5F4554;
-}
-
-input[type="text"], input[type="email"], input[type="password"], textarea {
-  background-color: #30362F;
-  color: #30362F;
-  border: 1px solid #30362F;
-  padding: 5px 10px;
-}
-
-input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
-  border-color: #5F4554;
-}
-
-p2 {
-  color:black;
-  font-size: 11px;
-
-}
-
-p3 {
-  color:#B8C0AF;
-  font-size: 11px;
-
 }
