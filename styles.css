@@ -1,9 +1,4 @@
 /* General reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* Typography */
 
@@ -101,9 +96,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 
 
-.container {
-  margin-right: 50px;
-}
 
 /* Navigation */
 
@@ -150,7 +142,7 @@ button:hover {
 
 img {
   max-width: 100%;
-  height: 200px;
+  /* Remove or adjust the height property as needed */
 }
 
 .image-container {
@@ -208,6 +200,13 @@ align-items: center;
 }
 /* Media Queries */
 
+/* Media query for wider screens */
+  @media screen and (min-width: 768px) {
+    .collapsible-container {
+      width: 90%;
+    }
+  }
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   /* Your CSS rules for extra small devices */
@@ -235,12 +234,7 @@ align-items: center;
 
 
 /* Miscellaneous and other elements */
-.custom-class {
-  background-color: #f1f1f1;
-  padding: 1rem;
-  border: 1px solid #e5e5e5;
-  border-radius: 0.25rem;
-}
+
 
 .collapsible-container {
     width: 100%;
