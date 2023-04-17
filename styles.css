@@ -142,7 +142,11 @@ button:hover {
 
 img {
   max-width: 100%;
+<<<<<<< HEAD
   /* Remove or adjust the height property as needed */
+=======
+  height: auto;
+>>>>>>> parent of 2faaca7 (errors)
 }
 
 .image-container {
