@@ -1,6 +1,60 @@
 /* General reset */
 
 /* Typography */
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Styling for the embed-container */
+.embed-container {
+position: relative;
+  width: 100%;
+  max-width: 800px; /* Set the maximum width for the embedded element */
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin: 20px auto; /* Add auto margin to center the element */
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+}
+
+/* Position the iframe and object elements within the embed-container */
+.embed-container iframe,
+.embed-container object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Set the width and height of the PDF container */
+.pdf-container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Hide the default PDF viewer controls */
+.pdf-viewer {
+  display: none;
+}
+
+/* Show an error message if the PDF cannot be loaded */
+.pdf-error {
+  display: none;
+  color: red;
+}
+
+/* Show a loading spinner while the PDF is loading */
+.pdf-spinner {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 code{white-space: pre-wrap;}
   span.smallcaps{font-variant: small-caps;}
   span.underline{text-decoration: underline;}
@@ -163,7 +217,20 @@ pre code {
   border: 1px solid #ddd;
 }
 
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Adjust this value depending on the aspect ratio of your slideshow */
+    overflow: hidden;
+  }
 
+  .slideshow-object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 
 /* Navigation */
@@ -211,11 +278,8 @@ button:hover {
 
 img {
   max-width: 100%;
-<<<<<<< HEAD
   /* Remove or adjust the height property as needed */
-=======
   height: auto;
->>>>>>> parent of 2faaca7 (errors)
 }
 
 .image-container {
@@ -264,47 +328,61 @@ align-items: center;
 }
 
 .responsive-iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 75%;
-    margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 /* Media Queries */
 
-/* Media query for wider screens */
-  @media screen and (min-width: 768px) {
-    .collapsible-container {
-      width: 90%;
-    }
+/* Media Queries for Responsive Design */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  nav ul {
+    justify-content: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
   }
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-  /* Your CSS rules for extra small devices */
+  p {
+    font-size: 1.1rem;
+  }
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  /* Your CSS rules for small devices */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  /* Your CSS rules for medium devices */
+/* Extra Large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+h1 {
+font-size: 3.5rem;
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  /* Your CSS rules for large devices */
+p {
+font-size: 1.3rem;
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  /* Your CSS rules for extra large devices */
+nav a {
+font-size: 1.4rem;
 }
-
+}
 
 /* Miscellaneous and other elements */
 
