@@ -157,6 +157,27 @@ button:hover {
   position: relative;
   overflow: hidden;
 }
+
+.invisible-container {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  position: relative;
+  max-width: 800px;
+  height: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  border: 0px solid #ddd;
+}
+.custom-width1 {
+  width: 80%;
+}
+.custom-width2 {
+  width: 40%;
+}
 .responsive-iframe-container {
   
 }
