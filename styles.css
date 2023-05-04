@@ -156,6 +156,9 @@ button:hover {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .invisible-container {
@@ -167,7 +170,6 @@ button:hover {
   position: relative;
   max-width: 800px;
   height: 100%;
-  padding-bottom: 56.25%;
   margin: 20px auto;
   overflow: hidden;
   background-color: #f7f7f7;
@@ -177,7 +179,7 @@ button:hover {
   width: 100%;
 }
 .custom-width2 {
-  width: 10%;
+  width: 70%;
 }
 .responsive-iframe-container {
   
@@ -241,24 +243,8 @@ align-items: center;
 }
 
 /* iFrames */
-.responsive-iframe-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    /* Add these properties to center the iframe container */
-    width: 60%; /* Adjust this value to change the iframe width */
-    margin: 20px auto; /* Add auto margin to center the element */
-}
 
-.responsive-iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 75%;
-    margin: auto;
-}
+
 /* Media Queries */
 
 /* Media query for wider screens */
@@ -295,8 +281,21 @@ align-items: center;
 
 
 /* Miscellaneous and other elements */
+#exampleButton {
+  width: 600px; /* adjust this value to your desired width */
+  background-color: rgba(95, 69, 84, 0.3); /* adjust this value to your desired color */
+ }
+.button-container {
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 1px; /* Adjust this value to reduce padding above */
+  padding-bottom: 30px;
 
-
+}
+#shrinkIframe {
+  width: 75%; /* Adjust this value as needed */
+  height: 75%; /* Adjust this value as needed */
+}
 .collapsible-container {
     width: 100%;
     max-width: 1900px;
