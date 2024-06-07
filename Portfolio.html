@@ -157,8 +157,8 @@ each tweet
 </p>
 </div>
 <button class="collapsible">
-<p2>IDENTIFYING WHAT CONSTITUTES A POLITICAL ADVERTISEMENT </p2> <p3>
-[DATA ANALYSIS &amp; VISUALIZTION; CONJOINT EXPERIMENT]</p3>
+    <p2>IDENTIFYING WHAT CONSTITUTES A POLITICAL ADVERTISEMENT</p2>
+    <p3>[DATA ANALYSIS &amp; VISUALIZATION; CONJOINT EXPERIMENT]</p3>
 </button>
 <div class="content">
 <ul>
@@ -201,13 +201,13 @@ Summary
 In this project, we investigated social media users’ perceptions of
 digital political ads. We measured users’ opinions on how platforms
 should design political ad UX and policies with the goal of establishing
-a baseline understanding of user opinions’ including the permissibly of
+a baseline understanding of user opinions’ including the permissibility of
 political ads and microtargeting, transparency in funding.
 </p>
 <p style="padding-left: 5px;">
 The primary objective of this research was to understand what factors of
 ads (and users themselves) may contribute to their perceptions of how
-`political’ given digital ads are. To do this, we conducted a conjoint
+'political' given digital ads are. To do this, we conducted a conjoint
 experiment asking respondents to compare artificial Facebook ads where
 we altered their source, content, and political orientation. This
 conjoint design allowed us to isolate the independent effects of each
@@ -217,11 +217,11 @@ component on perceptions of the political.
 We also conducted a within-between experiment asking respondents to
 evaluate real ads drawn from the Facebook Ad Library (collected by
 co-author). In this portion of the project, we randomly assigned
-respondents’ to view either a political or non-political advertisement
+respondents to view either a political or non-political advertisement
 and asked to rate how political they perceived it to be. Respondents
 rated multiple ads (within-subject variation) but the exact composition
 of the ads was randomized for each respondent (between-subject
-variation)
+variation).
 </p>
 <p style="padding-left: 5px;">
 Overall, our conjoint analysis strongly supported our original research
@@ -271,66 +271,50 @@ in-depth understanding of the relationship between ad content and
 political affiliation.
 </p>
 
-</div>
-<button class="collapsible">
-<p2>MEASURING THE EFFICACY OF IN-GROUP CORRECTIONS</p2>
-<p3>[EXPERIMENTAL DESIGN; DATA ANALYSIS &amp; VISUALIZATION]</p3>
-</button>
+<button class="collapsible">Detailed Methods</button>
 <div class="content">
 <h3 style="color:Black;font-size:18px;">
-Summary
+Initial Analyses and Descriptive Statistics
 </h3>
 <p style="padding-left: 5px;">
-This project aimed to investigate the effectiveness of corrective
-comments on social media in reducing misinformation, specifically
-examining the role of in-group and out-group members in promoting
-accurate beliefs. We hypothesized that comments from in-group members
-would be more effective in promoting accurate beliefs than comments from
-out-group members, particularly when the misinformation relates to the
-target’s ethnic group. We also hypothesized that corrective comments
-from culturally relevant organizations would be more effective in
-reducing misperceptions.
+The initial analysis involved several core datasets, including `CJ.csv`, `datc.csv`, `pooled.csv`, `correction.csv`, `data.csv`, `original.csv`, and `ra.csv`. The primary focus was to understand the distribution and characteristics of the data. Descriptive statistics and exploratory data analysis were performed using the `dplyr` and `ggplot2` libraries in R.
 </p>
-<ul>
-<div class="image-container" id="imageContainer">
-<img src='images/misinfo.png' class="image-zoom" id="imageZoom">
-<div>
-</ul>
 <p style="padding-left: 5px;">
-To test these hypotheses, we conducted three experiments. Participants
-were presented with fake Facebook posts containing misinformation
-targeting specific ethnic groups and were sorted into different
-conditions, including no misinformation post and no comments,
-misinformation post and no replies, misinformation post with in-group
-correction, and misinformation post with out-group correction. Before
-and after the treatment (misinformation post), participants were asked
-their belief in specific misinformation. The experiments relied on two
-survey waves that oversampled black (both surveys) and Latino (first
-survey only) respondents. Both experiments were sponsored by the
-Weidenbaum Center at Washington University in Saint Louis and
-distributed by NORC.
+For instance, summary statistics were computed to identify the central tendencies and dispersion of key variables. Visualization techniques, such as histograms and scatter plots, were employed to examine the data distributions and potential outliers. This initial step was crucial to ensure the quality and reliability of the data before proceeding with more complex analyses.
 </p>
-<ul>
-<div class="image-container2" id="imageContainer2">
-<img src='images/misinfo3.png' class="image-zoom2" id="imageZoom2">
-<div>
-</ul>
-<hr >
+
 <h3 style="color:Black;font-size:18px;">
-Methods
+Data Cleaning and Transformations
 </h3>
 <p style="padding-left: 5px;">
-In this project, I used the programming language R and used several
-packages (readr, dplyr, magrittr, knitr, ggplot2, labelled, haven,
-tidyverse, OneR, texreg, and weights) to perform data analysis. To
-analyze the data, I used techniques such as weighted means, confidence
-intervals, and linear regression. After manipulating the data to create
-new variables, I used regression models to examine the impact of
-treatments (or lack thereof) on different racial and ethnic groups’
-susceptibility to misinformation. I also created tables that displayed
-estimates, standard errors, and confidence intervals for different
-treatments and racial/ethnic groups.
+Data cleaning involved handling missing values, correcting inconsistencies, and transforming variables to suitable formats for analysis. The script `rep_cleaning-data.R` was utilized to perform these tasks. Key transformations included:
 </p>
+<ul>
+<li>**Variable Recoding**: Recoded categorical variables to ensure consistency and relevance for analysis. For example, political party affiliations were standardized across datasets.</li>
+<li>**Data Aggregation**: Aggregated data at different levels, such as individual respondent level or ad level, to facilitate various types of analyses.</li>
+<li>**Normalization**: Applied normalization techniques to scale numerical variables, ensuring they were on a comparable scale.</li>
+<li>**Missing Data Imputation**: Employed multiple imputation techniques to handle missing data, minimizing potential biases in the analysis.</li>
+</ul>
+<p style="padding-left: 5px;">
+Additionally, advanced data manipulation techniques were applied using `tidyverse` functions to reshape the data, such as `spread` and `gather` functions for pivoting data frames, making them suitable for subsequent analyses.
+</p>
+
+<h3 style="color:Black;font-size:18px;">
+Statistical Modeling and Visualization
+</h3>
+<p style="padding-left: 5px;">
+The statistical analysis involved using regression models to understand the relationship between ad characteristics and political perceptions. The script `rep_main-models.R` was used to build and evaluate these models. Key steps included:
+</p>
+<ul>
+<li>**Model Specification**: Defined the appropriate statistical models, including linear and logistic regression models, to analyze the data.</li>
+<li>**Model Fitting**: Fitted the models to the data using the `lm` and `glm` functions in R, ensuring appropriate handling of predictor variables.</li>
+<li>**Diagnostic Checks**: Conducted diagnostic checks to validate the assumptions of the models, including checking for multicollinearity, heteroscedasticity, and influential observations.</li>
+</ul>
+<p style="padding-left: 5px;">
+Visualization of the results was performed using `ggplot2` and `plotly` libraries. The script `rep_main-plots.R` was employed to create detailed visualizations, such as point-range plots and interaction plots, to effectively communicate the findings.
+</p>
+
+</div>
 </div>
 <button class="collapsible">
 <p2>IMPLEMENTING LARGE SCALE SURVEY EXPERIMENTS </p2> <p3> [RESEARCH
